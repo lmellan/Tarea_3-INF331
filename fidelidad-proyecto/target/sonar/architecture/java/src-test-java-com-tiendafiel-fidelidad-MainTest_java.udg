@@ -1,0 +1,95 @@
+
+1.0lmellan_Tarea_2-INF331JavaFrontend"1750891902682*java2.B…
+9
+4src/test/java/com/tiendafiel/fidelidad/MainTest.java2
+
+package4
+
+com.tiendafiel.fidelidad5
+&
+!com.tiendafiel.fidelidad.MainTest7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+MainTest12
+6
+0com.tiendafiel.fidelidad.MainTest#ejemploTest()V14
+
+method15
+
+ejemploTest16
+ 
+org.junit.jupiter.api.Test18
+
+unknown19
+
+annotated by20
+
+
+uses21
+&
+ org.junit.jupiter.api.Assertions23
+
+
+references24
+8
+2org.junit.jupiter.api.Assertions#assertEquals(II)V26
+
+calls27J
+
+1
+12Z
+
+3	
+354j¹
+
+17
+171819
+@
+13:
+131415 *
+1 (26:3B
+	
+9
+10
+
+
+11
+16
+
+25
+252619
+
+22
+222319
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12rl
+
+131720*
+1 (
+
+131721*
+1 (
+
+
+132224*
+1		 	(
+
+132527*
+1		 	(

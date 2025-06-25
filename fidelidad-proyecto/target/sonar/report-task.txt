@@ -1,0 +1,7 @@
+organization=lmellan
+projectKey=lmellan_Tarea_2-INF331
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.64866
+dashboardUrl=https://sonarcloud.io/dashboard?id=lmellan_Tarea_2-INF331
+ceTaskId=AZepSlXYjizjWJGDyUVr
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZepSlXYjizjWJGDyUVr
