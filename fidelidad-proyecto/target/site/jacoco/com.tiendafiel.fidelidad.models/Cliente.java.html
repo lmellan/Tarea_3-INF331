@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Cliente.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">fidelidad</a> &gt; <a href="index.source.html" class="el_package">com.tiendafiel.fidelidad.models</a> &gt; <span class="el_source">Cliente.java</span></div><h1>Cliente.java</h1><pre class="source lang-java linenums">package com.tiendafiel.fidelidad.models;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+public class Cliente {
+    private String id;
+    private String nombre;
+    private String correo;
+    private int puntos;
+    private String nivel;
+    private int streak;
+
+<span class="fc" id="L16">    private List&lt;Compra&gt; compras = new ArrayList&lt;&gt;();</span>
+
+    public void agregarCompra(Compra compra) {
+<span class="fc" id="L19">        compras.add(compra);</span>
+<span class="fc" id="L20">    }</span>
+
+    public long contarComprasEnFecha(String fecha) {
+<span class="fc" id="L23">        return compras.stream().filter(c -&gt; c.getFecha().equals(fecha)).count();</span>
+    }
+
+<span class="fc" id="L26">    public Cliente(String id, String nombre, String correo) {</span>
+<span class="fc" id="L27">        validarCorreo(correo);</span>
+<span class="fc" id="L28">        this.id = id;</span>
+<span class="fc" id="L29">        this.nombre = nombre;</span>
+<span class="fc" id="L30">        this.correo = correo;</span>
+<span class="fc" id="L31">        this.puntos = 0;</span>
+<span class="fc" id="L32">        this.nivel = &quot;Bronce&quot;;</span>
+<span class="fc" id="L33">        this.streak = 0;</span>
+<span class="fc" id="L34">    }</span>
+    
+    public void sumarPuntos(int puntos) {
+<span class="fc" id="L37">        this.puntos += puntos;</span>
+<span class="fc" id="L38">        actualizarNivel();</span>
+<span class="fc" id="L39">    }</span>
+
+    private void actualizarNivel() {
+<span class="fc bfc" id="L42" title="All 2 branches covered.">        if (puntos &gt;= 3000) {</span>
+<span class="fc" id="L43">            nivel = &quot;Platino&quot;;</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        } else if (puntos &gt;= 1500) {</span>
+<span class="fc" id="L45">            nivel = &quot;Oro&quot;;</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        } else if (puntos &gt;= 500) {</span>
+<span class="fc" id="L47">            nivel = &quot;Plata&quot;;</span>
+        } else {
+<span class="fc" id="L49">            nivel = &quot;Bronce&quot;;</span>
+        }
+<span class="fc" id="L51">    }</span>
+    private void validarCorreo(String correo) {
+<span class="pc bpc" id="L53" title="1 of 4 branches missed.">        if (correo == null || !correo.contains(&quot;@&quot;)) {</span>
+<span class="fc" id="L54">            throw new IllegalArgumentException(&quot;Correo inválido&quot;);</span>
+        }
+<span class="fc" id="L56">    }</span>
+    public double getMultiplicadorNivel() {
+<span class="fc bfc" id="L58" title="All 2 branches covered.">        if (puntos &gt;= 3000) return 2.0; // Platino</span>
+<span class="fc bfc" id="L59" title="All 2 branches covered.">        if (puntos &gt;= 1600) return 1.5; // Oro</span>
+<span class="fc bfc" id="L60" title="All 2 branches covered.">        if (puntos &gt;= 600) return 1.2;  // Plata</span>
+<span class="fc" id="L61">        return 1.0; // Bronce</span>
+    }
+
+<span class="fc" id="L64">    public String getNombre() {return nombre;}</span>
+<span class="fc" id="L65">    public String getCorreo() {return correo;}</span>
+<span class="fc" id="L66">    public String getId() { return id; }</span>
+<span class="fc" id="L67">    public int getPuntos() { return puntos; }</span>
+<span class="fc" id="L68">    public String getNivel() { return nivel; }</span>
+<span class="fc" id="L69">    public int getStreakDias() {return streak;}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

@@ -1,1 +1,6 @@
 com\tiendafiel\fidelidad\Main.class
+com\tiendafiel\fidelidad\models\Cliente.class
+com\tiendafiel\fidelidad\models\Compra.class
+com\tiendafiel\fidelidad\services\CompraServices.class
+com\tiendafiel\fidelidad\repositories\CompraRepository.class
+com\tiendafiel\fidelidad\repositories\ClienteRepository.class

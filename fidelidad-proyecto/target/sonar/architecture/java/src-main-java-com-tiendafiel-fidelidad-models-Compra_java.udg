@@ -1,0 +1,242 @@
+
+1.0lmellan_Tarea_2-INF331JavaFrontend"1750912354499*java2.B®
+>
+9src/main/java/com/tiendafiel/fidelidad/models/Compra.java2
+
+package4
+$
+com.tiendafiel.fidelidad.models5
++
+&com.tiendafiel.fidelidad.models.Compra7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+Compra12
+5
+/com.tiendafiel.fidelidad.models.Compra.idCompra14
+
+field15
+
+private16
+
+idCompra17
+6
+0com.tiendafiel.fidelidad.models.Compra.idCliente19
+
+	idCliente20
+2
+,com.tiendafiel.fidelidad.models.Compra.monto22
+
+monto23
+2
+,com.tiendafiel.fidelidad.models.Compra.fecha25
+
+fecha26
+m
+gcom.tiendafiel.fidelidad.models.Compra#<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V28
+
+method29
+
+calls30
+
+
+uses31
+
+
+references32
+L
+Fcom.tiendafiel.fidelidad.models.Compra#getIdCompra()Ljava/lang/String;34
+
+getIdCompra35
+I
+Ccom.tiendafiel.fidelidad.models.Compra#getFecha()Ljava/lang/String;37
+
+getFecha38
+8
+2com.tiendafiel.fidelidad.models.Compra#getMonto()I40
+
+getMonto41
+M
+Gcom.tiendafiel.fidelidad.models.Compra#getIdCliente()Ljava/lang/String;43
+
+getIdCliente44J
+
+1
+12Z
+
+3	
+354jç
+@
+24:
+242515 *
+1 (26:3B
+	
+9
+16
+
+
+11
+26
+@
+27:
+272829 *
+1	 	(26:3B
+	
+9
+10
+
+
+11
+12
+@
+21:
+212215 *
+1 (26:3B
+	
+9
+16
+
+
+11
+23
+@
+42:
+424329 *
+1 (26:3B
+	
+9
+10
+
+
+11
+44
+@
+18:
+181915 *
+1 (26:3B
+	
+9
+16
+
+
+11
+20
+@
+33:
+333429 *
+1 (26:3B
+	
+9
+10
+
+
+11
+35
+@
+36:
+363729 *
+1 (26:3B
+	
+9
+10
+
+
+11
+38
+@
+39:
+394029 *
+1 (26:3B
+	
+9
+10
+
+
+11
+41
+@
+13:
+131415 *
+1 (26:3B
+	
+9
+16
+
+
+11
+17
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12r¬
+
+27630*
+1	 	(
+
+27631*
+1
+	 
+(
+
+27632*
+1
+	 
+(
+
+271332*
+1
+ 
+(
+
+27631*
+1	 (
+
+27632*
+1	 (
+
+271832*
+1 (
+
+27631*
+1	 (
+
+27632*
+1	 (
+
+272132*
+1 (
+
+27631*
+1	 (
+
+27632*
+1	 (
+
+272432*
+1 (
+
+331332*
+1 (
+
+362432*
+1 (
+
+392132*
+1$ ()
+
+421832*
+1+ (4

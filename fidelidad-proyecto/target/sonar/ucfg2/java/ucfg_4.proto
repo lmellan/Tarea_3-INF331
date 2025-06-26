@@ -1,0 +1,22 @@
+
+^com.tiendafiel.fidelidad.repositories.ClienteRepository#listarClientes()Ljava/util/Collection;ç
+ÇC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/repositories/ClienteRepository.java (-"1*‡
+1 (è
+å
+ (
+%0java.util.Map"__id*e
+
+__unknown_file (I*G9
+7com.tiendafiel.fidelidad.repositories.ClienteRepository"
+
+clientesîë
+ ( 
+%1java.util.Collection",java.util.Map#values()Ljava/util/Collection;*1
+
+__unknown_file (
+
+%0java.util.Map2values()"(
+ (!
+
+%1java.util.CollectionB;9
+7com.tiendafiel.fidelidad.repositories.ClienteRepositoryH

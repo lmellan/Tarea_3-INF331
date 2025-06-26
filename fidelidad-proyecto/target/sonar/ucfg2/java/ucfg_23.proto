@@ -1,0 +1,37 @@
+
+8__sonar_lambda_0$com.tiendafiel.fidelidad.models.Cliente|
+rC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Cliente.java' (F"startingBlock*≥
+startingBlock' (Fí
+è
+
+__unknown_file (
+fechajava.lang.String"__id*R
+
+__unknown_file (6*4)
+'com.tiendafiel.fidelidad.models.Cliente"
+fecha*
+1*∆
+1, (-¡æ
+, (8
+%3java.lang.String"Ccom.tiendafiel.fidelidad.models.Compra#getFecha()Ljava/lang/String;*I
+
+__unknown_file (-
++
+c&com.tiendafiel.fidelidad.models.Compra2
+getFecha()’“
+, (F
+%4boolean",java.lang.String#equals(Ljava/lang/Object;)Z*4
+
+__unknown_file (
+
+%3java.lang.String*7
+
+__unknown_file (
+
+fechajava.lang.String2equals(Ljava/lang/Object;)"
+, (F
+
+%4boolean:7
+' ((+
+c&com.tiendafiel.fidelidad.models.CompraB 
+java.util.function.Predicate

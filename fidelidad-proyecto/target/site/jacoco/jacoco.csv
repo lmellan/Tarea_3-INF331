@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+fidelidad,com.tiendafiel.fidelidad.models,Compra,3,24,0,0,1,9,1,4,1,4
+fidelidad,com.tiendafiel.fidelidad.models,Cliente,0,135,1,15,0,37,1,21,0,14
+fidelidad,com.tiendafiel.fidelidad.repositories,ClienteRepository,0,32,0,0,0,8,0,5,0,5
+fidelidad,com.tiendafiel.fidelidad.repositories,CompraRepository,0,26,0,0,0,6,0,4,0,4
+fidelidad,com.tiendafiel.fidelidad.services,CompraServices,4,56,0,4,1,16,1,4,1,2
+fidelidad,com.tiendafiel.fidelidad,Main,6,1,0,0,3,1,2,1,2,1

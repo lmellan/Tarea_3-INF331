@@ -1,0 +1,13 @@
+:this	 	("&com.tiendafiel.fidelidad.models.Compra(idCompra	 	(!"java.lang.String)	idCliente	# 	(3"java.lang.Stringmonto	5 	(>"int%fecha	@ 	(L"java.lang.String"¹*
+(
+
+ 
+( "#set-field# idCompra:+
+)
+ (""#set-field# idCliente:'
+%
+ ("#set-field# monto:'
+%
+ (	"#set-field# fecha:
+
+ (*qC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Compra.java

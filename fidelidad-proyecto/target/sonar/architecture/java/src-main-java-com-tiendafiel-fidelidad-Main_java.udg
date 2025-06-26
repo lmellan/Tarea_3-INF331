@@ -1,5 +1,5 @@
 
-1.0lmellan_Tarea_2-INF331JavaFrontend"1750891901397*java2.B¨
+1.0lmellan_Tarea_2-INF331JavaFrontend"1750912354364*java2.B¼
 5
 0src/main/java/com/tiendafiel/fidelidad/Main.java2
 
@@ -26,17 +26,28 @@
 method15
 
 
-main16J
+main16
+
+
+references17
+L
+Fcom.tiendafiel.fidelidad.Main#ejecutarPrograma(Ljava/io/InputStream;)V19
+
+unknown20
+
+calls21
+
+ejecutarPrograma22J
 
 1
 12Z
 
 3	
-354j}
+354j¿
 9
 64
 678 *
-1 (:3B
+1 (:3B
 	
 9
 10
@@ -45,13 +56,30 @@
 11
 12
 @
-13:
-131415 *
-1 (26:3B
+18:
+181915 *
+1 (26:3B
 	
 9
 10
 
 
 11
-16
+22
+@
+13:
+131415 *
+1 (26:3B
+	
+9
+10
+
+
+11
+16r5
+
+13617*
+1		 	(
+
+131821*
+1		 	(

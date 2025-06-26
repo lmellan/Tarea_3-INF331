@@ -1,0 +1,527 @@
+
+1.0lmellan_Tarea_2-INF331JavaFrontend"1750912355002*java2.B¥
+?
+:src/main/java/com/tiendafiel/fidelidad/models/Cliente.java2
+
+package4
+$
+com.tiendafiel.fidelidad.models5
+,
+'com.tiendafiel.fidelidad.models.Cliente7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+Cliente12
+0
+*com.tiendafiel.fidelidad.models.Cliente.id14
+
+field15
+
+private16
+
+id17
+4
+.com.tiendafiel.fidelidad.models.Cliente.nombre19
+
+nombre20
+4
+.com.tiendafiel.fidelidad.models.Cliente.correo22
+
+correo23
+4
+.com.tiendafiel.fidelidad.models.Cliente.puntos25
+
+puntos26
+3
+-com.tiendafiel.fidelidad.models.Cliente.nivel28
+
+nivel29
+4
+.com.tiendafiel.fidelidad.models.Cliente.streak31
+
+streak32
+5
+/com.tiendafiel.fidelidad.models.Cliente.compras34
+
+compras35
+,
+&com.tiendafiel.fidelidad.models.Compra37
+
+unknown38
+
+
+uses39
+f
+`com.tiendafiel.fidelidad.models.Cliente#agregarCompra(Lcom/tiendafiel/fidelidad/models/Compra;)V41
+
+method42
+
+agregarCompra43
+
+	has param44
+
+is type45
+
+
+references46
+W
+Qcom.tiendafiel.fidelidad.models.Cliente#contarComprasEnFecha(Ljava/lang/String;)J48
+
+contarComprasEnFecha49
+I
+Ccom.tiendafiel.fidelidad.models.Compra#getFecha()Ljava/lang/String;51
+
+calls52
+m
+gcom.tiendafiel.fidelidad.models.Cliente#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V54
+P
+Jcom.tiendafiel.fidelidad.models.Cliente#validarCorreo(Ljava/lang/String;)V56
+=
+7com.tiendafiel.fidelidad.models.Cliente#sumarPuntos(I)V58
+
+sumarPuntos59
+@
+:com.tiendafiel.fidelidad.models.Cliente#actualizarNivel()V61
+
+actualizarNivel62
+
+validarCorreo63
+F
+@com.tiendafiel.fidelidad.models.Cliente#getMultiplicadorNivel()D65
+
+getMultiplicadorNivel66
+K
+Ecom.tiendafiel.fidelidad.models.Cliente#getNombre()Ljava/lang/String;68
+
+	getNombre69
+K
+Ecom.tiendafiel.fidelidad.models.Cliente#getCorreo()Ljava/lang/String;71
+
+	getCorreo72
+G
+Acom.tiendafiel.fidelidad.models.Cliente#getId()Ljava/lang/String;74
+
+getId75
+:
+4com.tiendafiel.fidelidad.models.Cliente#getPuntos()I77
+
+	getPuntos78
+J
+Dcom.tiendafiel.fidelidad.models.Cliente#getNivel()Ljava/lang/String;80
+
+getNivel81
+>
+8com.tiendafiel.fidelidad.models.Cliente#getStreakDias()I83
+
+getStreakDias84J
+
+1
+12Z
+
+3	
+354j‹
+@
+73:
+737442 *
+1B B(26:3B
+	
+9
+10
+
+
+11
+75
+@
+70:
+707142 *
+1A A(26:3B
+	
+9
+10
+
+
+11
+72
+@
+18:
+181915 *
+1
+ 
+(26:3B
+	
+9
+16
+
+
+11
+20
+@
+47:
+474842 *
+1 (26:3B
+	
+9
+10
+
+
+11
+49
+@
+13:
+131415 *
+1	 	(26:3B
+	
+9
+16
+
+
+11
+17
+@
+64:
+646542 *
+19 9(26:3B
+	
+9
+10
+
+
+11
+66
+@
+82:
+828342 *
+1E E(26:3B
+	
+9
+10
+
+
+11
+84
+
+36
+363738
+@
+76:
+767742 *
+1C C(26:3B
+	
+9
+10
+
+
+11
+78
+@
+33:
+333415 *
+1 (26:3B
+	
+9
+16
+
+
+11
+35
+@
+60:
+606142 *
+1) )(26:3B
+	
+9
+16
+
+
+11
+62
+@
+27:
+272815 *
+1 (26:3B
+	
+9
+16
+
+
+11
+29
+@
+67:
+676842 *
+1@ @(26:3B
+	
+9
+10
+
+
+11
+69
+@
+40:
+404142 *
+1 (26:3B
+	
+9
+10
+
+
+11
+43
+@
+53:
+535442 *
+1 (26:3B
+	
+9
+10
+
+
+11
+12
+@
+79:
+798042 *
+1D D(26:3B
+	
+9
+10
+
+
+11
+81
+@
+30:
+303115 *
+1 (26:3B
+	
+9
+16
+
+
+11
+32
+@
+24:
+242515 *
+1 (26:3B
+	
+9
+16
+
+
+11
+26
+@
+57:
+575842 *
+1$ $(26:3B
+	
+9
+10
+
+
+11
+59
+
+50
+505138
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12
+@
+21:
+212215 *
+1 (26:3B
+	
+9
+16
+
+
+11
+23
+@
+55:
+555642 *
+14 4(26:3B
+	
+9
+16
+
+
+11
+63r†
+
+333639*
+1 (
+
+403644*
+1 (%
+
+403645*
+1& (,
+
+403639*
+1 (%
+
+403346*
+1	 (
+
+403346*
+1	 (
+
+473346*
+1 (
+
+473346*
+1 (
+
+473645*
+1( ()
+
+473646*
+1- (.
+
+475052*
+1/ (7
+
+53652*
+1 (
+
+53646*
+1	 (
+
+535552*
+1	 (
+
+53639*
+1	 (
+
+53646*
+1	 (
+
+531346*
+1 (
+
+53639*
+1	 (
+
+53646*
+1	 (
+
+531846*
+1 (
+
+53639*
+1	 (
+
+53646*
+1	 (
+
+532146*
+1 (
+
+53639*
+1	 (
+
+53646*
+1	 (
+
+532446*
+1 (
+
+53639*
+1 	  (
+
+53646*
+1 	  (
+
+532746*
+1   (
+
+53639*
+1!	 !(
+
+53646*
+1!	 !(
+
+533046*
+1! !(
+
+57639*
+1%	 %(
+
+57646*
+1%	 %(
+
+572446*
+1% %(
+
+57646*
+1&	 &(
+
+576052*
+1&	 &(
+
+602446*
+1* *(
+
+602746*
+1+ +(
+
+602446*
+1, ,(
+
+602746*
+1- -(
+
+602446*
+1. .(
+
+602746*
+1/ /(
+
+602746*
+11 1(
+
+642446*
+1: :(
+
+642446*
+1; ;(
+
+642446*
+1< <(
+
+671846*
+1@' @(-
+
+702146*
+1A' A(-
+
+731346*
+1B$ B(&
+
+762446*
+1C% C(+
+
+792746*
+1D' D(,
+
+823046*
+1E( E(.

@@ -1,0 +1,49 @@
+
+@com.tiendafiel.fidelidad.models.Cliente#getMultiplicadorNivel()D|
+rC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Cliente.java9 9('"7*!
+2<" <(%"
+< <(&
+""*x
+3< <(a
+_
+< <(
+%2boolean"	__compare*
+< <(
+>=*
+< <(
+""*
+< <(2Ø*
+2
+1*!
+4;# ;(&"
+; ;('
+""*x
+5; ;(a
+_
+; ;(
+%1boolean"	__compare*
+; ;(
+>=*
+; ;(
+""*
+; ;(2À*
+3
+4*!
+6:# :(&"
+: :('
+""*x
+7: :(a
+_
+: :(
+%0boolean"	__compare*
+: :(
+>=*
+: :(
+""*
+: :(2¸*
+5
+6*!
+1= =("
+= =(
+""B+)
+'com.tiendafiel.fidelidad.models.ClienteHX

@@ -1,0 +1,50 @@
+
+	"Platino"java.lang.String
+"Oro"java.lang.String
+500int
+3000int
+"Bronce"java.lang.String
+"Plata"java.lang.String
+	1500int;this) )( "'com.tiendafiel.fidelidad.models.Cliente"…,
+*
+* *("#get-field# puntos:Bint-
++
+* *("
+#binop >=#2>=:Bboolean&"$
+* *( ** *(
+2,
+ ,("e2
+0
++ +(nivel"#id#:Bjava.lang.String'
+%
++ +("#set-field# nivel:	"‡,
+*
+, ,("#get-field# puntos:Bint-
++
+, ,(!
+"
+#binop >=#2>=:	Bboolean&"$
+, ,(!
+ *, ,(2.
+ .("e2
+0
+- -(nivel"#id#:Bjava.lang.String'
+%
+- -("#set-field# nivel:"‡,
+*
+. .("#get-field# puntos:Bint-
++
+. .( "
+#binop >=#2>=:Bboolean&"$
+. .(  *. .(20
+ 0("e2
+0
+/ /(nivel"#id#:Bjava.lang.String'
+%
+/ /("#set-field# nivel:"e2
+0
+1 1(nivel"#id#:Bjava.lang.String'
+%
+1 1("#set-field# nivel:""	"	
+
+3 3(*rC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Cliente.java

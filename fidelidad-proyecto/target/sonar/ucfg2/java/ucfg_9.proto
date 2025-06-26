@@ -1,0 +1,21 @@
+
+\com.tiendafiel.fidelidad.repositories.CompraRepository#listarCompras()Ljava/util/Collection;å
+ÅC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/repositories/CompraRepository.java (+"1*ﬁ
+1 (ç
+ä
+ (
+%0java.util.Map"__id*c
+
+__unknown_file (G*E8
+6com.tiendafiel.fidelidad.repositories.CompraRepository"	
+comprasîë
+ (
+%1java.util.Collection",java.util.Map#values()Ljava/util/Collection;*1
+
+__unknown_file (
+
+%0java.util.Map2values()"(
+ ( 
+
+%1java.util.CollectionB:8
+6com.tiendafiel.fidelidad.repositories.CompraRepositoryH

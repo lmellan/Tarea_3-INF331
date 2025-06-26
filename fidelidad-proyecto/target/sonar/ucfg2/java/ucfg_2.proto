@@ -1,0 +1,29 @@
+
+Écom.tiendafiel.fidelidad.repositories.ClienteRepository#obtenerCliente(Ljava/lang/String;)Lcom/tiendafiel/fidelidad/models/Cliente;ç
+ÇC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/repositories/ClienteRepository.java (!"1*é
+1 (è
+å
+ (
+%0java.util.Map"__id*e
+
+__unknown_file (I*G9
+7com.tiendafiel.fidelidad.repositories.ClienteRepository"
+
+clientesØ
+¨
+ (-
+%1'com.tiendafiel.fidelidad.models.Cliente"__mapGet*1
+
+__unknown_file (
+
+%0java.util.Map*4
+
+__unknown_file (
+
+idjava.lang.String";
+ ( /
+-
+%1'com.tiendafiel.fidelidad.models.Cliente:"
+" (+
+idjava.lang.StringB;9
+7com.tiendafiel.fidelidad.repositories.ClienteRepositoryH
