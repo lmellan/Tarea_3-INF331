@@ -1,5 +1,5 @@
 
-1.0lmellan_Tarea_2-INF331JavaFrontend"1750912354639*java2.B¢
+1.0lmellan_Tarea_2-INF331JavaFrontend"1750913460609*java2.B¢
 H
 Csrc/main/java/com/tiendafiel/fidelidad/services/CompraServices.java2
 
@@ -75,7 +75,7 @@ b
 F
 @com.tiendafiel.fidelidad.models.Cliente#getMultiplicadorNivel()D50
 8
-2com.tiendafiel.fidelidad.models.Compra#getMonto()I52
+2com.tiendafiel.fidelidad.models.Compra#getMonto()J52
 =
 7com.tiendafiel.fidelidad.models.Cliente#sumarPuntos(I)V54
 f
@@ -118,11 +118,11 @@ qcom.tiendafiel.fidelidad.repositories.CompraRepository#registrarCompra(Lcom/tie
 18
 181920
 
-57
-575820
-
 51
 515220
+
+57
+575820
 
 49
 495020

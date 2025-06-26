@@ -1,10 +1,8 @@
-&args ()"java.lang.String[]java.lang.System"¾8
+&args ()"java.lang.String[]java.lang.System"¾8
 6
-	 	(""#get-field# in:Bjava.io.InputStreamt
+ (""#get-field# in:Bjava.io.InputStreamt
 r
-	 	(#"I
+ (#"I
 com.tiendafiel.fidelidad.Main(ejecutarPrograma(Ljava/io/InputStream;)V2ejecutarPrograma:Bvoid
 
-
- 
-(*hC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/Main.java
+ (*hC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/Main.java

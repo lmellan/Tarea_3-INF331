@@ -1,5 +1,5 @@
 
-1.0lmellan_Tarea_2-INF331JavaFrontend"1750912354499*java2.B¨
+1.0lmellan_Tarea_2-INF331JavaFrontend"1750913460393*java2.B¨
 >
 9src/main/java/com/tiendafiel/fidelidad/models/Compra.java2
 
@@ -40,7 +40,7 @@ $
 
 fecha26
 m
-gcom.tiendafiel.fidelidad.models.Compra#<init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V28
+gcom.tiendafiel.fidelidad.models.Compra#<init>(Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;)V28
 
 method29
 
@@ -60,7 +60,7 @@ Ccom.tiendafiel.fidelidad.models.Compra#getFecha()Ljava/lang/String;37
 
 getFecha38
 8
-2com.tiendafiel.fidelidad.models.Compra#getMonto()I40
+2com.tiendafiel.fidelidad.models.Compra#getMonto()J40
 
 getMonto41
 M
@@ -84,17 +84,6 @@ Gcom.tiendafiel.fidelidad.models.Compra#getIdCliente()Ljava/lang/String;43
 
 11
 26
-@
-27:
-272829 *
-1	 	(26:3B
-	
-9
-10
-
-
-11
-12
 @
 21:
 212215 *
@@ -140,17 +129,6 @@ Gcom.tiendafiel.fidelidad.models.Compra#getIdCliente()Ljava/lang/String;43
 11
 35
 @
-36:
-363729 *
-1 (26:3B
-	
-9
-10
-
-
-11
-38
-@
 39:
 394029 *
 1 (26:3B
@@ -162,6 +140,17 @@ Gcom.tiendafiel.fidelidad.models.Compra#getIdCliente()Ljava/lang/String;43
 11
 41
 @
+36:
+363729 *
+1 (26:3B
+	
+9
+10
+
+
+11
+38
+@
 13:
 131415 *
 1 (26:3B
@@ -172,6 +161,17 @@ Gcom.tiendafiel.fidelidad.models.Compra#getIdCliente()Ljava/lang/String;43
 
 11
 17
+@
+27:
+272829 *
+1	 	(26:3B
+	
+9
+10
+
+
+11
+12
 9
 64
 678 *
@@ -236,7 +236,7 @@ Gcom.tiendafiel.fidelidad.models.Compra#getIdCliente()Ljava/lang/String;43
 1 (
 
 392132*
-1$ ()
+1% (*
 
 421832*
 1+ (4

@@ -3,10 +3,10 @@
 public class Compra {
     private String idCompra;
     private String idCliente;
-    private int monto;
+    private long monto;
     private String fecha;
 
-<span class="fc" id="L9">    public Compra(String idCompra, String idCliente, int monto, String fecha) {</span>
+<span class="fc" id="L9">    public Compra(String idCompra, String idCliente, long monto, String fecha) {</span>
 <span class="fc" id="L10">        this.idCompra = idCompra;</span>
 <span class="fc" id="L11">        this.idCliente = idCliente;</span>
 <span class="fc" id="L12">        this.monto = monto;</span>
@@ -20,7 +20,7 @@ public class Compra {
 <span class="fc" id="L20">        return fecha;</span>
     }
 
-<span class="fc" id="L23">    public int getMonto() { return monto; }</span>
+<span class="fc" id="L23">    public long getMonto() { return monto; }</span>
 <span class="nc" id="L24">    public String getIdCliente() { return idCliente; }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

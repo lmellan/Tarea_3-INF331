@@ -1,4 +1,4 @@
-:this	 	("&com.tiendafiel.fidelidad.models.Compra(idCompra	 	(!"java.lang.String)	idCliente	# 	(3"java.lang.Stringmonto	5 	(>"int%fecha	@ 	(L"java.lang.String"¹*
+:this	 	("&com.tiendafiel.fidelidad.models.Compra(idCompra	 	(!"java.lang.String)	idCliente	# 	(3"java.lang.Stringmonto	5 	(?"long%fecha	A 	(M"java.lang.String"¹*
 (
 
  

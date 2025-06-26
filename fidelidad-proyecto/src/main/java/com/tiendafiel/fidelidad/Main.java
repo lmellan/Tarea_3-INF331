@@ -71,7 +71,7 @@ public class Main {
                 System.out.print("Ingrese ID de la compra: ");
                 String idCompra = scanner.nextLine();
                 System.out.print("Ingrese monto de la compra (entero): ");
-                int monto = scanner.nextInt();
+                long monto = scanner.nextInt();
                 scanner.nextLine(); // limpiar salto
 
                 System.out.print("Ingrese fecha (yyyy-MM-dd): ");
