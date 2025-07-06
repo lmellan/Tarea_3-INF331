@@ -2,7 +2,7 @@
 
 ##  Descripción
 
-Este proyecto corresponde a la Tarea 3 del curso INF331. Se trata de una aplicación de consola desarrollada en **Java 17** utilizando **Maven** y el enfoque de desarrollo **TDD (Test Driven Development)**. El sistema permite gestionar clientes y compras dentro de un programa de fidelización, asignando puntos y niveles según el historial de compras.
+Este proyecto corresponde a la Tarea 3 del curso INF331. Se trata de una aplicación de consola desarrollada en **Java 21** utilizando **Maven** y el enfoque de desarrollo **TDD (Test Driven Development)**. El sistema permite gestionar clientes y compras dentro de un programa de fidelización, asignando puntos y niveles según el historial de compras.
 
 ## Wiki
 
