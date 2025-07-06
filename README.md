@@ -96,7 +96,7 @@ Introduce el ID del cliente y el sistema mostrará:
 
 ## Análisis de Calidad
 
-Este proyecto fue analizado con **SonarQube**, obteniendo uel siguiente resultado:
+Este proyecto fue analizado con **SonarQube**, obteniendo el siguiente resultado:
 
 - **Quality Gate:** Passed
 - **Seguridad:** 0 issues
