@@ -2,19 +2,19 @@
 
 import java.util.HashMap;
 import java.util.Map;
-import com.tiendafiel.fidelidad.models.Compra;
 import java.util.Collection;
 
+import com.tiendafiel.fidelidad.models.Compra;
 
 <span class="fc" id="L9">public class CompraRepository {</span>
-<span class="fc" id="L10">    private Map&lt;String, Compra&gt; compras = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L10">    private Map&lt;Integer, Compra&gt; compras = new HashMap&lt;&gt;();</span>
 
     public void registrarCompra(Compra compra) {
-<span class="fc" id="L13">        compras.put(compra.getIdCompra(), compra); // cambio</span>
+<span class="fc" id="L13">        compras.put(compra.getId(), compra);</span>
 <span class="fc" id="L14">    }</span>
 
-    public Compra obtenerCompra(String idCompra) {
-<span class="fc" id="L17">        return compras.get(idCompra); </span>
+    public Compra obtenerCompra(int idCompra) {
+<span class="fc" id="L17">        return compras.get(idCompra);</span>
     }
 
     public Collection&lt;Compra&gt; listarCompras() {

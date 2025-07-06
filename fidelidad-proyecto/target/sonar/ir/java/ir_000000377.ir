@@ -1,4 +1,5 @@
-;thisB B("'com.tiendafiel.fidelidad.models.Cliente"G5
-3
-B# B(%"#get-field# id:Bjava.lang.String
-B B(&*rC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Cliente.java
+;thisD D("'com.tiendafiel.fidelidad.models.Cliente&nombreD D('"java.lang.String"8(
+&
+E E("#set-field# nombre:
+
+F F(*rC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Cliente.java

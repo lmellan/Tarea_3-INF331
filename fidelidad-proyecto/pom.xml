@@ -12,6 +12,7 @@
     <maven.compiler.target>21</maven.compiler.target>
     <sonar.organization>lmellan</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    <sonar.exclusions>src/main/java/com/tiendafiel/fidelidad/Main.java</sonar.exclusions>
   </properties>
 
   <dependencies>
@@ -54,7 +55,7 @@
         </configuration>
       </plugin>
 
-      <!-- JaCoCo con filtro para evitar instrumentar clases del JDK -->
+      <!-- JaCoCo con exclusión de Main -->
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
@@ -68,6 +69,9 @@
               <includes>
                 <include>com/tiendafiel/**</include>
               </includes>
+              <excludes>
+                <exclude>com/tiendafiel/fidelidad/Main*</exclude>
+              </excludes>
             </configuration>
           </execution>
           <execution>

@@ -4,7 +4,6 @@ import com.tiendafiel.fidelidad.models.Cliente;
 import com.tiendafiel.fidelidad.models.Compra;
 import com.tiendafiel.fidelidad.repositories.CompraRepository;
 import com.tiendafiel.fidelidad.repositories.ClienteRepository;
-import java.util.Collection;
 
 
 public class CompraServices {
@@ -12,36 +11,30 @@ public class CompraServices {
     private CompraRepository repo;
     private ClienteRepository clienteRepo;
 
-<span class="fc" id="L15">    public CompraServices(CompraRepository repo, ClienteRepository clienteRepo) {</span>
-<span class="fc" id="L16">        this.repo = repo;</span>
-<span class="fc" id="L17">        this.clienteRepo = clienteRepo;</span>
-<span class="fc" id="L18">    }</span>
+<span class="fc" id="L14">    public CompraServices(CompraRepository repo, ClienteRepository clienteRepo) {</span>
+<span class="fc" id="L15">        this.repo = repo;</span>
+<span class="fc" id="L16">        this.clienteRepo = clienteRepo;</span>
+<span class="fc" id="L17">    }</span>
 
-
-    public Collection&lt;Compra&gt; obtenerTodasLasCompras() {
-<span class="nc" id="L22">        return repo.listarCompras();</span>
-    }
-
-
-    public void registrarCompra(String idCliente, Compra compra) {
-<span class="fc" id="L27">        Cliente cliente = clienteRepo.obtenerCliente(idCliente);</span>
-<span class="fc bfc" id="L28" title="All 2 branches covered.">        if (cliente == null) {</span>
-<span class="fc" id="L29">            throw new IllegalArgumentException(&quot;Cliente no encontrado&quot;);</span>
+    public void registrarCompra(int idCliente, Compra compra) {
+<span class="fc" id="L20">        Cliente cliente = clienteRepo.obtenerCliente(idCliente);</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">        if (cliente == null) {</span>
+<span class="fc" id="L22">            throw new IllegalArgumentException(&quot;Cliente no encontrado&quot;);</span>
         }
 
-<span class="fc" id="L32">        double factor = cliente.getMultiplicadorNivel();</span>
-<span class="fc" id="L33">        int puntos = (int)((compra.getMonto() / 100.0) * factor);</span>
+<span class="fc" id="L25">        double factor = cliente.getMultiplicadorNivel();</span>
+<span class="fc" id="L26">        int puntos = (int)((compra.getMonto() / 100.0) * factor);</span>
 
-<span class="fc" id="L35">        cliente.sumarPuntos(puntos);</span>
-<span class="fc" id="L36">        cliente.agregarCompra(compra);</span>
+<span class="fc" id="L28">        cliente.sumarPuntos(puntos);</span>
+<span class="fc" id="L29">        cliente.agregarCompra(compra);</span>
 
-<span class="fc" id="L38">        long comprasHoy = cliente.contarComprasEnFecha(compra.getFecha());</span>
-<span class="fc bfc" id="L39" title="All 2 branches covered.">        if (comprasHoy == 3) {</span>
-<span class="fc" id="L40">            cliente.sumarPuntos(10); // bonus</span>
+<span class="fc" id="L31">        long comprasHoy = cliente.contarComprasEnFecha(compra.getFecha());</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">        if (comprasHoy == 3) {</span>
+<span class="fc" id="L33">            cliente.sumarPuntos(10); // bonus</span>
         }
 
-<span class="fc" id="L43">        repo.registrarCompra(compra);</span>
-<span class="fc" id="L44">    }</span>
+<span class="fc" id="L36">        repo.registrarCompra(compra);</span>
+<span class="fc" id="L37">    }</span>
 
 
 

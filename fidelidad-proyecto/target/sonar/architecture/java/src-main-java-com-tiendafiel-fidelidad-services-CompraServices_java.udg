@@ -1,5 +1,5 @@
 
-1.0lmellan_Tarea_2-INF331JavaFrontend"1750913460609*java2.B¢
+1.0lmellan_Tarea_2-INF331JavaFrontend"1751781470142*java2.B”
 H
 Csrc/main/java/com/tiendafiel/fidelidad/services/CompraServices.java2
 
@@ -54,59 +54,53 @@ B
 
 
 references33
-e
-_com.tiendafiel.fidelidad.services.CompraServices#obtenerTodasLasCompras()Ljava/util/Collection;35
-
-obtenerTodasLasCompras36
+r
+lcom.tiendafiel.fidelidad.services.CompraServices#registrarCompra(ILcom/tiendafiel/fidelidad/models/Compra;)V35
+
+registrarCompra36
 ,
 &com.tiendafiel.fidelidad.models.Compra38
-b
-\com.tiendafiel.fidelidad.repositories.CompraRepository#listarCompras()Ljava/util/Collection;40
-ƒ
-}com.tiendafiel.fidelidad.services.CompraServices#registrarCompra(Ljava/lang/String;Lcom/tiendafiel/fidelidad/models/Compra;)V42
-
-registrarCompra43
 -
-'com.tiendafiel.fidelidad.models.Cliente45
+'com.tiendafiel.fidelidad.models.Cliente40
 
-returns46
-Š
-ƒcom.tiendafiel.fidelidad.repositories.ClienteRepository#obtenerCliente(Ljava/lang/String;)Lcom/tiendafiel/fidelidad/models/Cliente;48
+returns41
+x
+rcom.tiendafiel.fidelidad.repositories.ClienteRepository#obtenerCliente(I)Lcom/tiendafiel/fidelidad/models/Cliente;43
 F
-@com.tiendafiel.fidelidad.models.Cliente#getMultiplicadorNivel()D50
+@com.tiendafiel.fidelidad.models.Cliente#getMultiplicadorNivel()D45
 8
-2com.tiendafiel.fidelidad.models.Compra#getMonto()J52
+2com.tiendafiel.fidelidad.models.Compra#getMonto()J47
 =
-7com.tiendafiel.fidelidad.models.Cliente#sumarPuntos(I)V54
+7com.tiendafiel.fidelidad.models.Cliente#sumarPuntos(I)V49
 f
-`com.tiendafiel.fidelidad.models.Cliente#agregarCompra(Lcom/tiendafiel/fidelidad/models/Compra;)V56
+`com.tiendafiel.fidelidad.models.Cliente#agregarCompra(Lcom/tiendafiel/fidelidad/models/Compra;)V51
 W
-Qcom.tiendafiel.fidelidad.models.Cliente#contarComprasEnFecha(Ljava/lang/String;)J58
+Qcom.tiendafiel.fidelidad.models.Cliente#contarComprasEnFecha(Ljava/lang/String;)J53
 I
-Ccom.tiendafiel.fidelidad.models.Compra#getFecha()Ljava/lang/String;60
+Ccom.tiendafiel.fidelidad.models.Compra#getFecha()Ljava/lang/String;55
 w
-qcom.tiendafiel.fidelidad.repositories.CompraRepository#registrarCompra(Lcom/tiendafiel/fidelidad/models/Compra;)V62J
+qcom.tiendafiel.fidelidad.repositories.CompraRepository#registrarCompra(Lcom/tiendafiel/fidelidad/models/Compra;)V57J
 
 1
 12Z
 
 3	
-354j‰
+354j³
 @
-41:
-414230 *
-1 (26:3B
+34:
+343530 *
+1 (26:3B
 	
 9
 10
 
 
 11
-43
+36
 @
 28:
 282930 *
-1 (26:3B
+1 (26:3B
 	
 9
 10
@@ -118,20 +112,18 @@ qcom.tiendafiel.fidelidad.repositories.CompraRepository#registrarCompra(Lcom/tie
 18
 181920
 
-51
-515220
+46
+464720
 
-57
-575820
+52
+525320
 
-49
-495020
+44
+444520
 9
 64
 678 *
-1
- 
-(:3B
+1	 	(:3B
 	
 9
 10
@@ -139,36 +131,25 @@ qcom.tiendafiel.fidelidad.repositories.CompraRepository#registrarCompra(Lcom/tie
 
 11
 12
-@
-34:
-343530 *
-1 (26:3B
-	
-9
-10
-
-
-11
-36
 
 37
 373820
 
-61
-616220
+56
+565720
 
-55
-555620
+42
+424320
 
-47
-474820
+50
+505120
 
-53
-535420
+48
+484920
 @
 13:
 131415 *
-1 (26:3B
+1 (26:3B
 	
 9
 16
@@ -177,196 +158,176 @@ qcom.tiendafiel.fidelidad.repositories.CompraRepository#registrarCompra(Lcom/tie
 11
 17
 
-59
-596020
+54
+545520
 
 26
 262720
 
 39
 394020
-
-44
-444520
 @
 23:
 232415 *
-1 (26:3B
+1 (26:3B
 	
 9
 16
 
 
 11
-25rþ
+25rÜ
+
 
 131821*
-1 (
+1 (
 
 131822*
-1 (
+1 (
 
 131822*
-1 ("
+1 ("
 
 232621*
-1 (
+1 (
 
 232622*
-1 (
+1 (
 
 232622*
-1 (*
+1 (*
 
 281831*
-1 (+
+1 (+
 
 282631*
-12 (C
+12 (C
 
 28632*
-1 (
+1 (
 
 281821*
-1, (0
+1, (0
 
 281822*
-1 (+
+1 (+
 
 282621*
-1D (O
+1D (O
 
 282622*
-12 (C
+12 (C
 
 28622*
-1	 (
+1	 (
 
 28633*
-1	 (
+1	 (
 
 281822*
-1 (
+1 (
 
 281333*
-1 (
+1 (
 
 28622*
-1	 (
+1	 (
 
 28633*
-1	 (
+1	 (
 
 282622*
-1 (
+1 (
 
 282333*
-1 (
+1 (
+
+343731*
+10 (6
+
+343721*
+17 (=
 
 343722*
-1 (
+10 (6
+
+343921*
+1 (
+
+343922*
+1	 (
+
+343941*
+1 (&
+
+342633*
+1 (&
+
+344232*
+1' (5
+
+342333*
+1 (&
+
+342622*
+1 (&
+
+342333*
+1 (&
+
+343933*
+1 ( 
+
+344432*
+1! (6
+
+343733*
+1 (#
+
+344632*
+1$ (,
+
+343933*
+1	 (
+
+344832*
+1 (
+
+343933*
+1	 (
+
+345032*
+1 (
+
+343933*
+1 ("
+
+345232*
+1# (7
+
+343733*
+18 (>
+
+345432*
+1? (G
+
+343933*
+1! !(
+
+344832*
+1! !( 
 
 341833*
-1 (
+1$	 $(
 
-343932*
-1 ("
+345632*
+1$ $(
 
 341333*
-1 (
+1$	 $(
 
 341822*
-1 (
+1$	 $(
 
 341333*
-1 (
-
-413731*
-13 (9
-
-413721*
-1: (@
-
-413722*
-13 (9
-
-414421*
-1 (
-
-414422*
-1	 (
-
-414446*
-1 (&
-
-412633*
-1 (&
-
-414732*
-1' (5
-
-412333*
-1 (&
-
-412622*
-1 (&
-
-412333*
-1 (&
-
-414433*
-1   ( 
-
-414932*
-1 !  (6
-
-413733*
-1! !(#
-
-415132*
-1!$ !(,
-
-414433*
-1#	 #(
-
-415332*
-1# #(
-
-414433*
-1$	 $(
-
-415532*
-1$ $(
-
-414433*
-1& &("
-
-415732*
-1&# &(7
-
-413733*
-1&8 &(>
-
-415932*
-1&? &(G
-
-414433*
-1( ((
-
-415332*
-1( (( 
-
-411833*
-1+	 +(
-
-416132*
-1+ +(
-
-411333*
-1+	 +(
-
-411822*
-1+	 +(
-
-411333*
-1+	 +(
+1$	 $(

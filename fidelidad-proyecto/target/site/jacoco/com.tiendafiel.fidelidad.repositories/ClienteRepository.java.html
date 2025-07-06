@@ -7,22 +7,30 @@ import java.util.Map;
 import com.tiendafiel.fidelidad.models.Cliente;
 
 <span class="fc" id="L9">public class ClienteRepository {</span>
-<span class="fc" id="L10">    private Map&lt;String, Cliente&gt; clientes = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L10">    private final Map&lt;Integer, Cliente&gt; clientes = new HashMap&lt;&gt;();</span>
 
     public void agregarCliente(Cliente cliente) {
 <span class="fc" id="L13">        clientes.put(cliente.getId(), cliente); // actualiza si ya existe</span>
 <span class="fc" id="L14">    }</span>
 
-    public Cliente obtenerCliente(String id) {
+    public Cliente obtenerCliente(int id) {
 <span class="fc" id="L17">        return clientes.get(id);</span>
     }
 
-    public void eliminarCliente(String id) {
+    public void eliminarCliente(int id) {
 <span class="fc" id="L21">        clientes.remove(id);</span>
 <span class="fc" id="L22">    }</span>
 
     public Collection&lt;Cliente&gt; listarClientes() {
 <span class="fc" id="L25">        return clientes.values();</span>
     }
+
+    public void actualizarDatosCliente(int id, String nuevoNombre, String nuevoCorreo) {
+<span class="fc" id="L29">        Cliente cliente = clientes.get(id);</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">        if (cliente != null) {</span>
+<span class="fc" id="L31">            cliente.setNombre(nuevoNombre);</span>
+<span class="fc" id="L32">            cliente.setCorreo(nuevoCorreo);</span>
+        }
+<span class="fc" id="L34">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

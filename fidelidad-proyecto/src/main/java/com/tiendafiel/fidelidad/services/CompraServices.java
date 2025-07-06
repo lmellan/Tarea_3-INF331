@@ -4,7 +4,6 @@ import com.tiendafiel.fidelidad.models.Cliente;
 import com.tiendafiel.fidelidad.models.Compra;
 import com.tiendafiel.fidelidad.repositories.CompraRepository;
 import com.tiendafiel.fidelidad.repositories.ClienteRepository;
-import java.util.Collection;
 
 
 public class CompraServices {
@@ -17,13 +16,7 @@ public class CompraServices {
         this.clienteRepo = clienteRepo;
     }
 
-
-    public Collection<Compra> obtenerTodasLasCompras() {
-        return repo.listarCompras();
-    }
-
-
-    public void registrarCompra(String idCliente, Compra compra) {
+    public void registrarCompra(int idCliente, Compra compra) {
         Cliente cliente = clienteRepo.obtenerCliente(idCliente);
         if (cliente == null) {
             throw new IllegalArgumentException("Cliente no encontrado");

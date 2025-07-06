@@ -1,15 +1,15 @@
 
-Ecom.tiendafiel.fidelidad.models.Cliente#getNombre()Ljava/lang/String;|
-rC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Cliente.java@ @("1*´
-1@& @(,
+Ecom.tiendafiel.fidelidad.models.Cliente#getCorreo()Ljava/lang/String;|
+rC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Cliente.java? ?("1*´
+1?' ?(-
 }
-@& @(,
+?' ?(-
 %0java.lang.String"__id*S
 
 __unknown_file (7*5)
 'com.tiendafiel.fidelidad.models.Cliente"
-nombre"$
-@ @(-
+correo"$
+?  ?(.
 
 %0java.lang.StringB+)
 'com.tiendafiel.fidelidad.models.ClienteH

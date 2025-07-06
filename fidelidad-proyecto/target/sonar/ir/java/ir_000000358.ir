@@ -1,13 +1,4 @@
-:this	 	("&com.tiendafiel.fidelidad.models.Compra(idCompra	 	(!"java.lang.String)	idCliente	# 	(3"java.lang.Stringmonto	5 	(?"long%fecha	A 	(M"java.lang.String"¹*
-(
-
- 
-( "#set-field# idCompra:+
-)
- (""#set-field# idCliente:'
-%
- ("#set-field# monto:'
-%
- (	"#set-field# fecha:
-
- (*qC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Compra.java
+:this! !("&com.tiendafiel.fidelidad.models.Compra">,
+*
+" "("#get-field# monto:Blong
+" "(*qC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Compra.java

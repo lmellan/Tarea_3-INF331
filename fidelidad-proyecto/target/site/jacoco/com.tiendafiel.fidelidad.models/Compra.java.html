@@ -1,26 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Compra.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">fidelidad</a> &gt; <a href="index.source.html" class="el_package">com.tiendafiel.fidelidad.models</a> &gt; <span class="el_source">Compra.java</span></div><h1>Compra.java</h1><pre class="source lang-java linenums">package com.tiendafiel.fidelidad.models;
 
 public class Compra {
-    private String idCompra;
-    private String idCliente;
-    private long monto;
-    private String fecha;
+<span class="fc" id="L4">    private static int contadorIds = 1;</span>
 
-<span class="fc" id="L9">    public Compra(String idCompra, String idCliente, long monto, String fecha) {</span>
-<span class="fc" id="L10">        this.idCompra = idCompra;</span>
-<span class="fc" id="L11">        this.idCliente = idCliente;</span>
-<span class="fc" id="L12">        this.monto = monto;</span>
-<span class="fc" id="L13">        this.fecha = fecha;</span>
-<span class="fc" id="L14">    }</span>
+    private final int idCompra;
+    private final int idCliente;
+    private final long monto;
+    private final String fecha;
 
-    public String getIdCompra() {
-<span class="fc" id="L17">        return idCompra;</span>
+<span class="fc" id="L11">    public Compra(int idCliente, long monto, String fecha) {</span>
+<span class="fc bfc" id="L12" title="All 4 branches covered.">        if (fecha == null || fecha.isBlank()) {</span>
+<span class="fc" id="L13">            throw new IllegalArgumentException(&quot;La fecha no puede ser nula ni vacía.&quot;);</span>
+        }
+<span class="fc bfc" id="L15" title="All 2 branches covered.">        if (monto &lt; 0) {</span>
+<span class="fc" id="L16">            throw new IllegalArgumentException(&quot;El monto debe ser positivo.&quot;);</span>
+        }
+
+<span class="fc" id="L19">        this.idCompra = contadorIds++;</span>
+<span class="fc" id="L20">        this.idCliente = idCliente;</span>
+<span class="fc" id="L21">        this.monto = monto;</span>
+<span class="fc" id="L22">        this.fecha = fecha;</span>
+<span class="fc" id="L23">    }</span>
+
+    public int getId() {
+<span class="fc" id="L26">        return idCompra;</span>
     }
+
+    public int getIdCliente() {
+<span class="fc" id="L30">        return idCliente;</span>
+    }
+
+    public long getMonto() {
+<span class="fc" id="L34">        return monto;</span>
+    }
+
     public String getFecha() {
-<span class="fc" id="L20">        return fecha;</span>
+<span class="fc" id="L38">        return fecha;</span>
     }
-
-<span class="fc" id="L23">    public long getMonto() { return monto; }</span>
-<span class="nc" id="L24">    public String getIdCliente() { return idCliente; }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

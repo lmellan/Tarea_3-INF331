@@ -1,5 +1,5 @@
 
-1.0lmellan_Tarea_2-INF331JavaFrontend"1750913457223*java2.B¥
+1.0lmellan_Tarea_2-INF331JavaFrontend"1751781469593*java2.Bû
 N
 Isrc/main/java/com/tiendafiel/fidelidad/repositories/CompraRepository.java2
 
@@ -49,12 +49,12 @@ qcom.tiendafiel.fidelidad.repositories.CompraRepository#registrarCompra(Lcom/tie
 
 
 references29
-L
-Fcom.tiendafiel.fidelidad.models.Compra#getIdCompra()Ljava/lang/String;31
+5
+/com.tiendafiel.fidelidad.models.Compra#getId()I31
 
 calls32
-‡
-€com.tiendafiel.fidelidad.repositories.CompraRepository#obtenerCompra(Ljava/lang/String;)Lcom/tiendafiel/fidelidad/models/Compra;34
+u
+ocom.tiendafiel.fidelidad.repositories.CompraRepository#obtenerCompra(I)Lcom/tiendafiel/fidelidad/models/Compra;34
 
 obtenerCompra35
 b
@@ -93,17 +93,6 @@ b
 30
 303120
 @
-33:
-333424 *
-1 (26:3B
-	
-9
-10
-
-
-11
-35
-@
 13:
 131415 *
 1
@@ -129,12 +118,23 @@ b
 38
 
 18
-181920rË
+181920
+@
+33:
+333424 *
+1 (26:3B
+	
+9
+10
+
+
+11
+35rË
 
 131821*
 1
- 
-(
+ 
+( 
 
 221826*
 1! ('
@@ -158,7 +158,7 @@ b
 1 (
 
 223032*
-1 ('
+1 (!
 
 331828*
 1 (

@@ -3,70 +3,75 @@
 import java.util.ArrayList;
 import java.util.List;
 
-
-
 public class Cliente {
-    private String id;
+<span class="fc" id="L7">    private static int contadorIds = 1;</span>
+
+    private final int id;
     private String nombre;
     private String correo;
     private int puntos;
     private String nivel;
     private int streak;
 
-<span class="fc" id="L16">    private List&lt;Compra&gt; compras = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L16">    private final List&lt;Compra&gt; compras = new ArrayList&lt;&gt;();</span>
+
+<span class="fc" id="L18">    public Cliente(String nombre, String correo) {</span>
+<span class="fc" id="L19">        validarCorreo(correo);</span>
+<span class="fc" id="L20">        this.id = contadorIds++;</span>
+<span class="fc" id="L21">        this.nombre = nombre;</span>
+<span class="fc" id="L22">        this.correo = correo;</span>
+<span class="fc" id="L23">        this.puntos = 0;</span>
+<span class="fc" id="L24">        this.nivel = &quot;Bronce&quot;;</span>
+<span class="fc" id="L25">        this.streak = 0;</span>
+<span class="fc" id="L26">    }</span>
 
     public void agregarCompra(Compra compra) {
-<span class="fc" id="L19">        compras.add(compra);</span>
-<span class="fc" id="L20">    }</span>
+<span class="fc" id="L29">        compras.add(compra);</span>
+<span class="fc" id="L30">    }</span>
 
     public long contarComprasEnFecha(String fecha) {
-<span class="fc" id="L23">        return compras.stream().filter(c -&gt; c.getFecha().equals(fecha)).count();</span>
+<span class="fc" id="L33">        return compras.stream().filter(c -&gt; c.getFecha().equals(fecha)).count();</span>
     }
 
-<span class="fc" id="L26">    public Cliente(String id, String nombre, String correo) {</span>
-<span class="fc" id="L27">        validarCorreo(correo);</span>
-<span class="fc" id="L28">        this.id = id;</span>
-<span class="fc" id="L29">        this.nombre = nombre;</span>
-<span class="fc" id="L30">        this.correo = correo;</span>
-<span class="fc" id="L31">        this.puntos = 0;</span>
-<span class="fc" id="L32">        this.nivel = &quot;Bronce&quot;;</span>
-<span class="fc" id="L33">        this.streak = 0;</span>
-<span class="fc" id="L34">    }</span>
-    
     public void sumarPuntos(int puntos) {
 <span class="fc" id="L37">        this.puntos += puntos;</span>
 <span class="fc" id="L38">        actualizarNivel();</span>
 <span class="fc" id="L39">    }</span>
 
     private void actualizarNivel() {
-<span class="fc bfc" id="L42" title="All 2 branches covered.">        if (puntos &gt;= 3000) {</span>
-<span class="fc" id="L43">            nivel = &quot;Platino&quot;;</span>
-<span class="fc bfc" id="L44" title="All 2 branches covered.">        } else if (puntos &gt;= 1500) {</span>
-<span class="fc" id="L45">            nivel = &quot;Oro&quot;;</span>
-<span class="fc bfc" id="L46" title="All 2 branches covered.">        } else if (puntos &gt;= 500) {</span>
-<span class="fc" id="L47">            nivel = &quot;Plata&quot;;</span>
-        } else {
-<span class="fc" id="L49">            nivel = &quot;Bronce&quot;;</span>
-        }
-<span class="fc" id="L51">    }</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">        if (puntos &gt;= 3000) nivel = &quot;Platino&quot;;</span>
+<span class="fc bfc" id="L43" title="All 2 branches covered.">        else if (puntos &gt;= 1500) nivel = &quot;Oro&quot;;</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        else if (puntos &gt;= 500) nivel = &quot;Plata&quot;;</span>
+<span class="fc" id="L45">        else nivel = &quot;Bronce&quot;;</span>
+<span class="fc" id="L46">    }</span>
+
     private void validarCorreo(String correo) {
-<span class="pc bpc" id="L53" title="1 of 4 branches missed.">        if (correo == null || !correo.contains(&quot;@&quot;)) {</span>
-<span class="fc" id="L54">            throw new IllegalArgumentException(&quot;Correo inválido&quot;);</span>
+<span class="fc bfc" id="L49" title="All 4 branches covered.">        if (correo == null || !correo.contains(&quot;@&quot;)) {</span>
+<span class="fc" id="L50">            throw new IllegalArgumentException(&quot;Correo inválido&quot;);</span>
         }
-<span class="fc" id="L56">    }</span>
+<span class="fc" id="L52">    }</span>
+
     public double getMultiplicadorNivel() {
-<span class="fc bfc" id="L58" title="All 2 branches covered.">        if (puntos &gt;= 3000) return 2.0; // Platino</span>
-<span class="fc bfc" id="L59" title="All 2 branches covered.">        if (puntos &gt;= 1600) return 1.5; // Oro</span>
-<span class="fc bfc" id="L60" title="All 2 branches covered.">        if (puntos &gt;= 600) return 1.2;  // Plata</span>
-<span class="fc" id="L61">        return 1.0; // Bronce</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">        if (puntos &gt;= 3000) return 2.0;      </span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">        if (puntos &gt;= 1500) return 1.5;      </span>
+<span class="fc bfc" id="L57" title="All 2 branches covered.">        if (puntos &gt;= 500)  return 1.2;      </span>
+<span class="fc" id="L58">        return 1.0;                          </span>
     }
+ 
+<span class="fc" id="L61">    public int getId() { return id; }</span>
+<span class="fc" id="L62">    public String getNombre() { return nombre; }</span>
+<span class="fc" id="L63">    public String getCorreo() { return correo; }</span>
+<span class="fc" id="L64">    public int getPuntos() { return puntos; }</span>
+<span class="fc" id="L65">    public String getNivel() { return nivel; }</span>
+<span class="fc" id="L66">    public int getStreakDias() { return streak; }</span>
+ 
+    public void setNombre(String nombre) {
+<span class="fc" id="L69">        this.nombre = nombre;</span>
+<span class="fc" id="L70">    }</span>
 
-<span class="fc" id="L64">    public String getNombre() {return nombre;}</span>
-<span class="fc" id="L65">    public String getCorreo() {return correo;}</span>
-<span class="fc" id="L66">    public String getId() { return id; }</span>
-<span class="fc" id="L67">    public int getPuntos() { return puntos; }</span>
-<span class="fc" id="L68">    public String getNivel() { return nivel; }</span>
-<span class="fc" id="L69">    public int getStreakDias() {return streak;}</span>
-
+    public void setCorreo(String correo) {
+<span class="fc" id="L73">        validarCorreo(correo);</span>
+<span class="fc" id="L74">        this.correo = correo;</span>
+<span class="fc" id="L75">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

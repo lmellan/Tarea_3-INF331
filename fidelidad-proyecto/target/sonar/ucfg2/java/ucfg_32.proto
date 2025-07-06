@@ -1,15 +1,15 @@
 
-Acom.tiendafiel.fidelidad.models.Cliente#getId()Ljava/lang/String;|
-rC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Cliente.javaB B("1*°
-1B# B(%{
-y
-B# B(%
-%0java.lang.String"__id*O
+Dcom.tiendafiel.fidelidad.models.Cliente#getNivel()Ljava/lang/String;|
+rC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Cliente.javaA A("1*³
+1A& A(+~
+|
+A& A(+
+%0java.lang.String"__id*R
 
-__unknown_file (3*1)
-'com.tiendafiel.fidelidad.models.Cliente"
-id"$
-B B(&
+__unknown_file (6*4)
+'com.tiendafiel.fidelidad.models.Cliente"
+nivel"$
+A A(,
 
 %0java.lang.StringB+)
 'com.tiendafiel.fidelidad.models.ClienteH

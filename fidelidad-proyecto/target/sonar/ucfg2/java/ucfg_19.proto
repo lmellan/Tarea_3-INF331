@@ -1,21 +1,26 @@
 
-_com.tiendafiel.fidelidad.services.CompraServices#obtenerTodasLasCompras()Ljava/util/Collection;…
-{C:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/services/CompraServices.java (4"1*Þ
-1 (­
-ª
- (<
-%06com.tiendafiel.fidelidad.repositories.CompraRepository"__id*Z
-
-__unknown_file (>*<2
-0com.tiendafiel.fidelidad.services.CompraServices"
-repoôñ
- (#
-%1java.util.Collection"\com.tiendafiel.fidelidad.repositories.CompraRepository#listarCompras()Ljava/util/Collection;*Z
-
-__unknown_file (>
-<
-%06com.tiendafiel.fidelidad.repositories.CompraRepository2listarCompras()"(
- ($
-
-%1java.util.CollectionB42
-0com.tiendafiel.fidelidad.services.CompraServicesH
+:com.tiendafiel.fidelidad.models.Cliente#%field_initializer
+__unknown_file ("1*’
+1 (±®
+|
+rC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Cliente.java- (8
+%0java.util.ArrayList"java.util.ArrayListÏ
+Ì
+|
+rC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Cliente.java) (:
+%1"java.util.ArrayList#<init>()V*'
+ (
+
+%0java.util.ArrayListè
+å
+|
+rC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Cliente.java (;6)
+'com.tiendafiel.fidelidad.models.Cliente"	
+compras"__id*'
+ (
+
+%0java.util.ArrayList"‘
+z
+rC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Cliente.java L(
+implicit returnB+)
+'com.tiendafiel.fidelidad.models.Cliente

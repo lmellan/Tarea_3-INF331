@@ -1,5 +1,5 @@
 
-1.0lmellan_Tarea_2-INF331JavaFrontend"1750913460393*java2.B¨
+1.0lmellan_Tarea_2-INF331JavaFrontend"1751781469975*java2.B¤
 >
 9src/main/java/com/tiendafiel/fidelidad/models/Compra.java2
 
@@ -19,64 +19,79 @@ $
 simple name11
 
 Compra12
-5
-/com.tiendafiel.fidelidad.models.Compra.idCompra14
+8
+2com.tiendafiel.fidelidad.models.Compra.contadorIds14
 
 field15
 
 private16
+
+contadorIds17
+5
+/com.tiendafiel.fidelidad.models.Compra.idCompra19
 
-idCompra17
+idCompra20
 6
-0com.tiendafiel.fidelidad.models.Compra.idCliente19
+0com.tiendafiel.fidelidad.models.Compra.idCliente22
 
-	idCliente20
+	idCliente23
 2
-,com.tiendafiel.fidelidad.models.Compra.monto22
+,com.tiendafiel.fidelidad.models.Compra.monto25
 
-monto23
+monto26
 2
-,com.tiendafiel.fidelidad.models.Compra.fecha25
+,com.tiendafiel.fidelidad.models.Compra.fecha28
 
-fecha26
-m
-gcom.tiendafiel.fidelidad.models.Compra#<init>(Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;)V28
+fecha29
+J
+Dcom.tiendafiel.fidelidad.models.Compra#<init>(IJLjava/lang/String;)V31
 
-method29
+method32
 
-calls30
+calls33
 
 
-uses31
+uses34
 
 
-references32
-L
-Fcom.tiendafiel.fidelidad.models.Compra#getIdCompra()Ljava/lang/String;34
-
-getIdCompra35
-I
-Ccom.tiendafiel.fidelidad.models.Compra#getFecha()Ljava/lang/String;37
-
-getFecha38
-8
-2com.tiendafiel.fidelidad.models.Compra#getMonto()J40
-
-getMonto41
-M
-Gcom.tiendafiel.fidelidad.models.Compra#getIdCliente()Ljava/lang/String;43
+references35
+5
+/com.tiendafiel.fidelidad.models.Compra#getId()I37
+
+getId38
+<
+6com.tiendafiel.fidelidad.models.Compra#getIdCliente()I40
 
-getIdCliente44J
+getIdCliente41
+8
+2com.tiendafiel.fidelidad.models.Compra#getMonto()J43
+
+getMonto44
+I
+Ccom.tiendafiel.fidelidad.models.Compra#getFecha()Ljava/lang/String;46
+
+getFecha47J
 
 1
 12Z
 
 3	
-354j
+354jÏ
+@
+27:
+272815 *
+1	 	(26:3B
+	
+9
+16
+
+
+11
+29
 @
 24:
 242515 *
-1 (26:3B
+1 (26:3B
 	
 9
 16
@@ -85,9 +100,31 @@ Gcom.tiendafiel.fidelidad.models.Compra#getIdCliente()Ljava/lang/String;43
 11
 26
 @
+36:
+363732 *
+1 (26:3B
+	
+9
+10
+
+
+11
+38
+@
+39:
+394032 *
+1 (26:3B
+	
+9
+10
+
+
+11
+41
+@
 21:
 212215 *
-1 (26:3B
+1 (26:3B
 	
 9
 16
@@ -97,8 +134,8 @@ Gcom.tiendafiel.fidelidad.models.Compra#getIdCliente()Ljava/lang/String;43
 23
 @
 42:
-424329 *
-1 (26:3B
+424332 *
+1! !(26:3B
 	
 9
 10
@@ -107,9 +144,20 @@ Gcom.tiendafiel.fidelidad.models.Compra#getIdCliente()Ljava/lang/String;43
 11
 44
 @
+45:
+454632 *
+1% %(26:3B
+	
+9
+10
+
+
+11
+47
+@
 18:
 181915 *
-1 (26:3B
+1 (26:3B
 	
 9
 16
@@ -118,38 +166,16 @@ Gcom.tiendafiel.fidelidad.models.Compra#getIdCliente()Ljava/lang/String;43
 11
 20
 @
-33:
-333429 *
-1 (26:3B
+30:
+303132 *
+1 (26:3B
 	
 9
 10
 
 
 11
-35
-@
-39:
-394029 *
-1 (26:3B
-	
-9
-10
-
-
-11
-41
-@
-36:
-363729 *
-1 (26:3B
-	
-9
-10
-
-
-11
-38
+12
 @
 13:
 131415 *
@@ -161,17 +187,6 @@ Gcom.tiendafiel.fidelidad.models.Compra#getIdCliente()Ljava/lang/String;43
 
 11
 17
-@
-27:
-272829 *
-1	 	(26:3B
-	
-9
-10
-
-
-11
-12
 9
 64
 678 *
@@ -182,61 +197,58 @@ Gcom.tiendafiel.fidelidad.models.Compra#getIdCliente()Ljava/lang/String;43
 
 
 11
-12rÂ
+12rÝ
 
-27630*
-1	 	(
+30633*
+1 (
 
-27631*
-1
-	 
-(
+30634*
+1	 (
 
-27632*
-1
-	 
-(
+30635*
+1	 (
 
-271332*
-1
- 
-(
+301835*
+1 (
+
+301335*
+1 ($
 
-27631*
-1	 (
+30634*
+1	 (
 
-27632*
-1	 (
+30635*
+1	 (
 
-271832*
-1 (
+302135*
+1 (
 
-27631*
-1	 (
+30634*
+1	 (
 
-27632*
-1	 (
+30635*
+1	 (
 
-272132*
-1 (
+302435*
+1 (
 
-27631*
-1	 (
+30634*
+1	 (
 
-27632*
-1	 (
+30635*
+1	 (
 
-272432*
-1 (
+302735*
+1 (
 
-331332*
-1 (
+361835*
+1 (
 
-362432*
-1 (
+392135*
+1 (
 
-392132*
-1% (*
+422435*
+1" "(
 
-421832*
-1+ (4
+452735*
+1& &(

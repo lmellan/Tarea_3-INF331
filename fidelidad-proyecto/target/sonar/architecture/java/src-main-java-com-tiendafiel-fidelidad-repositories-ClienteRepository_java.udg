@@ -1,5 +1,5 @@
 
-1.0lmellan_Tarea_2-INF331JavaFrontend"1750913455931*java2.B©	
+1.0lmellan_Tarea_2-INF331JavaFrontend"1751781469033*java2.B¨
 O
 Jsrc/main/java/com/tiendafiel/fidelidad/repositories/ClienteRepository.java2
 
@@ -49,28 +49,58 @@ rcom.tiendafiel.fidelidad.repositories.ClienteRepository#agregarCliente(Lcom/tie
 
 
 references29
-G
-Acom.tiendafiel.fidelidad.models.Cliente#getId()Ljava/lang/String;31
+6
+0com.tiendafiel.fidelidad.models.Cliente#getId()I31
 
 calls32
-ä
-Écom.tiendafiel.fidelidad.repositories.ClienteRepository#obtenerCliente(Ljava/lang/String;)Lcom/tiendafiel/fidelidad/models/Cliente;34
+x
+rcom.tiendafiel.fidelidad.repositories.ClienteRepository#obtenerCliente(I)Lcom/tiendafiel/fidelidad/models/Cliente;34
 
 obtenerCliente35
-b
-\com.tiendafiel.fidelidad.repositories.ClienteRepository#eliminarCliente(Ljava/lang/String;)V37
+Q
+Kcom.tiendafiel.fidelidad.repositories.ClienteRepository#eliminarCliente(I)V37
 
 eliminarCliente38
 d
 ^com.tiendafiel.fidelidad.repositories.ClienteRepository#listarClientes()Ljava/util/Collection;40
 
-listarClientes41J
+listarClientes41
+|
+vcom.tiendafiel.fidelidad.repositories.ClienteRepository#actualizarDatosCliente(ILjava/lang/String;Ljava/lang/String;)V43
+
+actualizarDatosCliente44
+L
+Fcom.tiendafiel.fidelidad.models.Cliente#setNombre(Ljava/lang/String;)V46
+L
+Fcom.tiendafiel.fidelidad.models.Cliente#setCorreo(Ljava/lang/String;)V48J
 
 1
 12Z
 
 3	
-354j≠
+354jó
+@
+42:
+424324 *
+1 (26:3B
+	
+9
+10
+
+
+11
+44
+@
+33:
+333424 *
+1 (26:3B
+	
+9
+10
+
+
+11
+35
 @
 36:
 363724 *
@@ -83,19 +113,11 @@ d
 11
 38
 
+47
+474820
+
 30
 303120
-@
-33:
-333424 *
-1 (26:3B
-	
-9
-10
-
-
-11
-35
 9
 64
 678 *
@@ -144,12 +166,15 @@ d
 
 
 11
-41rú
+41
+
+45
+454620rè
 
 131821*
 1
- 
-( 
+  
+('
 
 221826*
 1  ('
@@ -207,3 +232,30 @@ d
 
 391329*
 1 (
+
+421827*
+1 (
+
+421821*
+1	 (
+
+421828*
+1 (#
+
+421329*
+1 (#
+
+421329*
+1 (#
+
+421829*
+1 (
+
+424532*
+1 (
+
+421829*
+1   (
+
+424732*
+1   (
