@@ -96,7 +96,15 @@ Introduce el ID del cliente y el sistema mostrará:
 
 ## Análisis de Calidad
 
- El análisis con **SonarQube** y **JaCoCo** permitió detectar líneas faltantes y lograr el 100% de cobertura final.
+Este proyecto fue analizado con **SonarQube**, obteniendo uel siguiente resultado:
+
+- **Quality Gate:** Passed
+- **Seguridad:** 0 issues
+- **Mantenibilidad:** A (sin problemas abiertos)
+- **Fiabilidad:** A (sin problemas abiertos)
+- **Duplicaciones:** 0.0%
+- **Cobertura de tests:** **100%**
+ 
 ## Estructura del Proyecto
 
 La estructura de carpetas sigue una separación por capas:
