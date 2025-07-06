@@ -12,3 +12,8 @@ Este proyecto es una aplicación de software desarrollada para gestionar un prog
 ## Wiki
 
 Puede acceder a la Wiki del proyecto mediante el siguiente [enlace](https://github.com/lmellan/Tarea_3-INF331/wiki).  
+
+## Licencia
+
+Este proyecto está bajo la **MIT License** - ver el archivo [LICENSE](https://github.com/lmellan/Tarea_3-INF331/edit/main/LICENSE) para más detalles.
+
