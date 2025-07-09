@@ -111,24 +111,26 @@ Este proyecto fue analizado con **SonarQube**, obteniendo el siguiente resultado
 
 La estructura de carpetas sigue una separación por capas:
 
-```
 FIDELIDAD-PROYECTO
-|│
-|├── src/
-|   ├── main/java/com/tiendafiel/fidelidad
-|   |   ├── models/               # Clases de dominio: Cliente y Compra
-|   |   |   ├── Cliente.java
-|   |   |   └── Compra.java
-|   |   ├── repositories/         # Repositorios en memoria
-|   |   |   ├── ClienteRepository.java
-|   |   |   └── CompraRepository.java
-|   |   ├── services/            # Lógica de negocio
-|   |   |   └── CompraServices.java
-|   |   └── Main.java             # Interfaz de consola
-|   └── test/java/com/tiendafiel/fidelidad
-|       └── MainTest.java         # Pruebas unitarias con JUnit 5
-|└── pom.xml                      # Archivo de configuración Maven
-```
+│
+├── src/
+│   ├── main/java/com/tiendafiel/fidelidad
+│   │   ├── models/               # Clases de dominio: Cliente y Compra
+│   │   │   ├── Cliente.java
+│   │   │   └── Compra.java
+│   │   ├── repositories/         # Repositorios en memoria
+│   │   │   ├── ClienteRepository.java
+│   │   │   └── CompraRepository.java
+│   │   ├── services/             # Lógica de negocio
+│   │   │   └── CompraServices.java
+│   │   └── Main.java             # Interfaz de consola
+│
+│   └── test/java/com/tiendafiel/fidelidad
+│       ├── GestionClientesTest.java   # Pruebas de CRUD para Cliente
+│       ├── GestionComprasTest.java    # Pruebas de registro, puntos y eliminación de compras
+│       └── GestionNivelesTest.java    # Pruebas de ascenso de nivel según puntos
+│
+└── pom.xml                      # Archivo de configuración Maven
 
 
 
