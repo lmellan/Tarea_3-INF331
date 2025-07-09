@@ -13,7 +13,8 @@ Puede acceder a la Wiki del proyecto mediante el siguiente [enlace](https://gith
 
 Se implementó una arquitectura modular con separación de responsabilidades entre modelos, servicios, repositorios y la interfaz principal (`Main.java`). A continuación se presenta el diagrama de casos de uso que resume las principales funcionalidades del sistema:
 
-![Diagrama de casos de uso](https://github.com/user-attachments/assets/55df4c5c-cf96-44ac-9b0f-d7ed1172a133)
+![Diagrama de caso de uso (3)](https://github.com/user-attachments/assets/20ac7658-01c0-4ffa-a667-90dd2049fe5d)
+
 
 ##  Instalación del Proyecto
 
@@ -82,6 +83,7 @@ Desde esta opción puedes:
 Puedes:
 
 * Registrar compras para un cliente
+* Eliminar compra
 * Ver detalles de una compra
 * Listar todas las compras
 
