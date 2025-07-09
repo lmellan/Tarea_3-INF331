@@ -110,7 +110,8 @@ Este proyecto fue analizado con **SonarQube**, obteniendo el siguiente resultado
 ## Estructura del Proyecto
 
 La estructura de carpetas sigue una separación por capas:
-
+ 
+```
 FIDELIDAD-PROYECTO
 │
 ├── src/
@@ -131,8 +132,8 @@ FIDELIDAD-PROYECTO
 │       └── GestionNivelesTest.java    # Pruebas de ascenso de nivel según puntos
 │
 └── pom.xml                      # Archivo de configuración Maven
-
-
+```
+ 
 
 ## Licencia
 
