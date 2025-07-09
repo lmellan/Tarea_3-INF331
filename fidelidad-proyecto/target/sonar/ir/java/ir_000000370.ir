@@ -1,35 +1,0 @@
-
-3000int
-2.0double
-	1.5double
-1500int
-1.0double
-500int
-1.2double;this6 6('"'com.tiendafiel.fidelidad.models.Cliente"{,
-*
-7 7("#get-field# puntos:Bint-
-+
-7 7("
-#binop >=#2>=:Bboolean"
-7 7( *7 7(
-"
-7 7('"},
-*
-8 8("#get-field# puntos:Bint-
-+
-8 8("
-#binop >=#2>=:Bboolean"
-8 8( *8 8(
-"
-8 8('	"},
-*
-9 9(
-"#get-field# puntos:Bint-
-+
-9 9("
-#binop >=#2>=:
-Bboolean"
-9 9( *9 9(
-"
-9 9('"
-: :(*rC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Cliente.java

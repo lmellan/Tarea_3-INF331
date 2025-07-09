@@ -1,261 +1,0 @@
-
-1.0lmellan_Tarea_2-INF331JavaFrontend"1751781469033*java2.B¬
-O
-Jsrc/main/java/com/tiendafiel/fidelidad/repositories/ClienteRepository.java2
-
-package4
-*
-%com.tiendafiel.fidelidad.repositories5
-<
-7com.tiendafiel.fidelidad.repositories.ClienteRepository7
-
-
-class8
-
-access9
-
-public10
-
-simple name11
-
-ClienteRepository12
-F
-@com.tiendafiel.fidelidad.repositories.ClienteRepository.clientes14
-
-field15
-
-private16
-
-clientes17
--
-'com.tiendafiel.fidelidad.models.Cliente19
-
-unknown20
-
-
-uses21
-x
-rcom.tiendafiel.fidelidad.repositories.ClienteRepository#agregarCliente(Lcom/tiendafiel/fidelidad/models/Cliente;)V23
-
-method24
-
-agregarCliente25
-
-	has param26
-
-is type27
-
-returns28
-
-
-references29
-6
-0com.tiendafiel.fidelidad.models.Cliente#getId()I31
-
-calls32
-x
-rcom.tiendafiel.fidelidad.repositories.ClienteRepository#obtenerCliente(I)Lcom/tiendafiel/fidelidad/models/Cliente;34
-
-obtenerCliente35
-Q
-Kcom.tiendafiel.fidelidad.repositories.ClienteRepository#eliminarCliente(I)V37
-
-eliminarCliente38
-d
-^com.tiendafiel.fidelidad.repositories.ClienteRepository#listarClientes()Ljava/util/Collection;40
-
-listarClientes41
-|
-vcom.tiendafiel.fidelidad.repositories.ClienteRepository#actualizarDatosCliente(ILjava/lang/String;Ljava/lang/String;)V43
-
-actualizarDatosCliente44
-L
-Fcom.tiendafiel.fidelidad.models.Cliente#setNombre(Ljava/lang/String;)V46
-L
-Fcom.tiendafiel.fidelidad.models.Cliente#setCorreo(Ljava/lang/String;)V48J
-
-1
-12Z
-
-3	
-354j—
-@
-42:
-424324 *
-1 (26:3B
-	
-9
-10
-
-
-11
-44
-@
-33:
-333424 *
-1 (26:3B
-	
-9
-10
-
-
-11
-35
-@
-36:
-363724 *
-1 (26:3B
-	
-9
-10
-
-
-11
-38
-
-47
-474820
-
-30
-303120
-9
-64
-678 *
-1	 	(:3B
-	
-9
-10
-
-
-11
-12
-
-18
-181920
-@
-22:
-222324 *
-1 (26:3B
-	
-9
-10
-
-
-11
-25
-@
-13:
-131415 *
-1
- 
-(26:3B
-	
-9
-16
-
-
-11
-17
-@
-39:
-394024 *
-1 (26:3B
-	
-9
-10
-
-
-11
-41
-
-45
-454620r
-
-131821*
-1
-  
-('
-
-221826*
-1  ('
-
-221827*
-1( (/
-
-221821*
-1  ('
-
-221828*
-1	 (
-
-221329*
-1	 (
-
-221329*
-1	 (
-
-221829*
-1 (
-
-223032*
-1 (#
-
-331828*
-1 (
-
-331821*
-1 (
-
-331828*
-1 (
-
-331329*
-1 (
-
-331329*
-1 (
-
-361828*
-1	 (
-
-361329*
-1	 (
-
-361329*
-1	 (
-
-391821*
-1 (
-
-391329*
-1 (
-
-391329*
-1 (
-
-421827*
-1 (
-
-421821*
-1	 (
-
-421828*
-1 (#
-
-421329*
-1 (#
-
-421329*
-1 (#
-
-421829*
-1 (
-
-424532*
-1 (
-
-421829*
-1   (
-
-424732*
-1   (

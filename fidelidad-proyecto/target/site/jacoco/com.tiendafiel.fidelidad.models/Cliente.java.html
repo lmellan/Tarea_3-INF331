@@ -73,5 +73,15 @@ public class Cliente {
 <span class="fc" id="L73">        validarCorreo(correo);</span>
 <span class="fc" id="L74">        this.correo = correo;</span>
 <span class="fc" id="L75">    }</span>
+
+    public List&lt;Compra&gt; getHistorialCompras() {
+<span class="fc" id="L78">        return compras;</span>
+    }
+
+    public void eliminarCompra(Compra compra) {
+<span class="fc" id="L82">    compras.remove(compra);</span>
+<span class="fc" id="L83">}</span>
+
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

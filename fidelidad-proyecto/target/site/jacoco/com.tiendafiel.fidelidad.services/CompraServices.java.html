@@ -36,6 +36,17 @@ public class CompraServices {
 <span class="fc" id="L36">        repo.registrarCompra(compra);</span>
 <span class="fc" id="L37">    }</span>
 
+    public void eliminarCompra(int idCompra) {
+<span class="fc" id="L40">        Compra compra = repo.obtenerCompra(idCompra);</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        if (compra == null) return;</span>
+
+<span class="fc" id="L43">        Cliente cliente = clienteRepo.obtenerCliente(compra.getIdCliente());</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        if (cliente != null) {</span>
+<span class="fc" id="L45">            cliente.eliminarCompra(compra);</span>
+        }
+
+<span class="fc" id="L48">        repo.eliminarCompra(idCompra);</span>
+<span class="fc" id="L49">    }</span>
 
 
 }

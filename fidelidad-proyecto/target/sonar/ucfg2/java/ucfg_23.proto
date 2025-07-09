@@ -1,55 +1,0 @@
-
-Qcom.tiendafiel.fidelidad.models.Cliente#contarComprasEnFecha(Ljava/lang/String;)J|
-rC:/Users/Casa/Desktop/Tarea_2-INF331/fidelidad-proyecto/src/main/java/com/tiendafiel/fidelidad/models/Cliente.java   ($"1*§
-1! !(~
-|
-! !(
-%0java.util.List"__id*T
-
-__unknown_file (8*6)
-'com.tiendafiel.fidelidad.models.Cliente"	
-compras¢Ÿ
-! !(
-%1java.util.stream.Stream"6java.util.Collection#stream()Ljava/util/stream/Stream;*2
-
-__unknown_file (
-
-%0java.util.List2stream()ž
-›
-!' !(F"
-%2java.util.function.Predicate"__declareFunction*X
-
-__unknown_file (<:
-8__sonar_lambda_0$com.tiendafiel.fidelidad.models.Cliente‹
-ˆ
-
-__unknown_file (-
-"
-%2java.util.function.Predicate"
-fecha"__id*7
-
-__unknown_file (
-
-fechajava.lang.String¬©
-! !(G
-%5java.util.stream.Stream"Wjava.util.stream.Stream#filter(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;*;
-
-__unknown_file (
-
-%1java.util.stream.Stream*@
-
-__unknown_file ($
-"
-%2java.util.function.Predicate2&filter(Ljava/util/function/Predicate;)€~
-! !(O
-
-%6long" java.util.stream.Stream#count()J*;
-
-__unknown_file (
-
-%5java.util.stream.Stream2count()"
-! !(P
-"":%
- %  (1
-fechajava.lang.StringB+)
-'com.tiendafiel.fidelidad.models.ClienteHX

@@ -1,1 +1,3 @@
-com\tiendafiel\fidelidad\MainTest.class
+com\tiendafiel\fidelidad\GestionClientesTest.class
+com\tiendafiel\fidelidad\GestionComprasTest.class
+com\tiendafiel\fidelidad\GestionNivelesTest.class

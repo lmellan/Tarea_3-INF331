@@ -5,6 +5,7 @@ import com.tiendafiel.fidelidad.models.Compra;
 import com.tiendafiel.fidelidad.repositories.ClienteRepository;
 import com.tiendafiel.fidelidad.repositories.CompraRepository;
 import com.tiendafiel.fidelidad.services.CompraServices;
+import com.tiendafiel.fidelidad.services.ClienteServices;
 
 import java.io.InputStream;
 import java.util.Scanner;
@@ -20,6 +21,7 @@ public class Main {
         ClienteRepository clienteRepo = new ClienteRepository();
         CompraRepository compraRepo = new CompraRepository();
         CompraServices compraServices = new CompraServices(compraRepo, clienteRepo);
+        ClienteServices clienteServices = new ClienteServices(clienteRepo, compraRepo);
 
         boolean continuar = true;
 
@@ -34,7 +36,7 @@ public class Main {
             int opcion = leerEntero(scanner, 1, 4);
 
             switch (opcion) {
-                case 1 -> gestionClientes(scanner, clienteRepo);
+                case 1 -> gestionClientes(scanner, clienteRepo, clienteServices);
                 case 2 -> gestionCompras(scanner, clienteRepo, compraRepo, compraServices);
                 case 3 -> {
                     System.out.print("\n");
@@ -43,8 +45,6 @@ public class Main {
                     System.out.print("\n");
                     Cliente c = clienteRepo.obtenerCliente(id);
                     if (c != null) {
-                        System.out.println("Nombre: " + c.getNombre());
-                        System.out.println("Correo: " + c.getCorreo());
                         System.out.println("Puntos: " + c.getPuntos());
                         System.out.println("Nivel: " + c.getNivel());
                     } else {
@@ -62,7 +62,7 @@ public class Main {
         scanner.close();
     }
 
-    private static void gestionClientes(Scanner scanner, ClienteRepository clienteRepo) {
+    private static void gestionClientes(Scanner scanner, ClienteRepository clienteRepo, ClienteServices clienteServices){
         boolean volver = false;
         while (!volver) {
             System.out.println("\n======== Gestión de Clientes =========\n");
@@ -97,27 +97,28 @@ public class Main {
                     int id = leerEntero(scanner, 0, Integer.MAX_VALUE);
                     Cliente cliente = clienteRepo.obtenerCliente(id);
                     if (cliente != null) {
-                        clienteRepo.eliminarCliente(id);
+                        clienteServices.eliminarClienteYCompras(id);
                         System.out.println("\nCliente eliminado exitosamente.");
-                    } else {
-                        System.out.println("No se encontró un cliente con ese ID.");
-                    }
-                }
-
-                case 3 -> {
-                    System.out.print("ID del cliente: ");
-                    int id = leerEntero(scanner, 0, Integer.MAX_VALUE);
-                    Cliente c = clienteRepo.obtenerCliente(id);
-                     System.out.print("\n");
-                    if (c != null) {
-                        System.out.println("Nombre: " + c.getNombre());
-                        System.out.println("Correo: " + c.getCorreo());
-                        System.out.println("Puntos: " + c.getPuntos());
-                        System.out.println("Nivel: " + c.getNivel());
                     } else {
                         System.out.println("\nCliente no encontrado.");
                     }
                 }
+                case 3 -> {
+                    System.out.print("ID del cliente: ");
+                    int idDetalle = Integer.parseInt(scanner.nextLine());
+                    Cliente cliente = clienteRepo.obtenerCliente(idDetalle);
+                    if (cliente != null) {
+                        System.out.println("\nNombre: " + cliente.getNombre());
+                        System.out.println("Correo: " + cliente.getCorreo());
+                        System.out.println("Compras:");
+                        for (Compra comp : cliente.getHistorialCompras()) {
+                            System.out.println("- ID: " + comp.getId() + ", Monto: " + comp.getMonto() + ", Fecha: " + comp.getFecha());
+                        }
+                    } else {
+                        System.out.println("\nCliente no encontrado.");
+                    }
+                }
+
                 case 4 -> {
                     System.out.print("ID del cliente: ");
                     int id = leerEntero(scanner, 0, Integer.MAX_VALUE);
@@ -166,12 +167,13 @@ public class Main {
         while (!volver) {
             System.out.println("\n======= Gestión de Compras ========\n");
             System.out.println("1. Agregar Compra");
-            System.out.println("2. Ver Detalle de Compra");
-            System.out.println("3. Listar Compras");
-            System.out.println("4. Volver");
+            System.out.println("2. Eliminar Compra");
+            System.out.println("3. Ver Detalle de Compra");
+            System.out.println("4. Listar Compras");
+            System.out.println("5. Volver");
             System.out.print("\nSeleccione una opción: ");
 
-            int op = leerEntero(scanner, 1, 4);
+            int op = leerEntero(scanner, 1, 5);
 
             System.out.print("\n");
 
@@ -196,6 +198,18 @@ public class Main {
                     System.out.println("\nCompra registrada exitosamente. ID: " + compra.getId());
                 }
                 case 2 -> {
+                    System.out.print("ID de la compra a eliminar: ");
+                    int idCompra = Integer.parseInt(scanner.nextLine());
+                    Compra compra = compraRepo.obtenerCompra(idCompra);
+                    if (compra == null) {
+                        System.out.println("\nCompra no encontrada.");
+                    } else{
+                        compraServices.eliminarCompra(idCompra);
+                        System.out.println("\nCompra eliminada exitosamente.");
+                    }
+                }
+
+                case 3 -> {
                     System.out.print("ID de la compra: ");
                     int id = leerEntero(scanner, 0, Integer.MAX_VALUE);
                     Compra c = compraRepo.obtenerCompra(id);
@@ -205,15 +219,15 @@ public class Main {
                         System.out.println("Monto: " + c.getMonto());
                         System.out.println("Fecha: " + c.getFecha());
                     } else {
-                        System.out.println("Compra no encontrada.");
+                        System.out.println("\nCompra no encontrada.");
                     }
                 }
-                case 3 -> {
+                case 4 -> {
                     for (Compra c : compraRepo.listarCompras()) {
                         System.out.println("ID: " + c.getId() + " | Cliente ID: " + c.getIdCliente() + " | $" + c.getMonto() + " | Fecha: " + c.getFecha());
                     }
                 }
-                case 4 -> volver = true;
+                case 5 -> volver = true;
             }
             System.out.println();
         }

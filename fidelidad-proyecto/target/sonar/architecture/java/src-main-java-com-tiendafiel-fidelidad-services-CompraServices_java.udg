@@ -1,333 +1,0 @@
-
-1.0lmellan_Tarea_2-INF331JavaFrontend"1751781470142*java2.B”
-H
-Csrc/main/java/com/tiendafiel/fidelidad/services/CompraServices.java2
-
-package4
-&
-!com.tiendafiel.fidelidad.services5
-5
-0com.tiendafiel.fidelidad.services.CompraServices7
-
-
-class8
-
-access9
-
-public10
-
-simple name11
-
-CompraServices12
-;
-5com.tiendafiel.fidelidad.services.CompraServices.repo14
-
-field15
-
-private16
-
-
-repo17
-<
-6com.tiendafiel.fidelidad.repositories.CompraRepository19
-
-unknown20
-
-is type21
-
-
-uses22
-B
-<com.tiendafiel.fidelidad.services.CompraServices.clienteRepo24
-
-clienteRepo25
-=
-7com.tiendafiel.fidelidad.repositories.ClienteRepository27
-²
-«com.tiendafiel.fidelidad.services.CompraServices#<init>(Lcom/tiendafiel/fidelidad/repositories/CompraRepository;Lcom/tiendafiel/fidelidad/repositories/ClienteRepository;)V29
-
-method30
-
-	has param31
-
-calls32
-
-
-references33
-r
-lcom.tiendafiel.fidelidad.services.CompraServices#registrarCompra(ILcom/tiendafiel/fidelidad/models/Compra;)V35
-
-registrarCompra36
-,
-&com.tiendafiel.fidelidad.models.Compra38
--
-'com.tiendafiel.fidelidad.models.Cliente40
-
-returns41
-x
-rcom.tiendafiel.fidelidad.repositories.ClienteRepository#obtenerCliente(I)Lcom/tiendafiel/fidelidad/models/Cliente;43
-F
-@com.tiendafiel.fidelidad.models.Cliente#getMultiplicadorNivel()D45
-8
-2com.tiendafiel.fidelidad.models.Compra#getMonto()J47
-=
-7com.tiendafiel.fidelidad.models.Cliente#sumarPuntos(I)V49
-f
-`com.tiendafiel.fidelidad.models.Cliente#agregarCompra(Lcom/tiendafiel/fidelidad/models/Compra;)V51
-W
-Qcom.tiendafiel.fidelidad.models.Cliente#contarComprasEnFecha(Ljava/lang/String;)J53
-I
-Ccom.tiendafiel.fidelidad.models.Compra#getFecha()Ljava/lang/String;55
-w
-qcom.tiendafiel.fidelidad.repositories.CompraRepository#registrarCompra(Lcom/tiendafiel/fidelidad/models/Compra;)V57J
-
-1
-12Z
-
-3	
-354j³
-@
-34:
-343530 *
-1 (26:3B
-	
-9
-10
-
-
-11
-36
-@
-28:
-282930 *
-1 (26:3B
-	
-9
-10
-
-
-11
-12
-
-18
-181920
-
-46
-464720
-
-52
-525320
-
-44
-444520
-9
-64
-678 *
-1	 	(:3B
-	
-9
-10
-
-
-11
-12
-
-37
-373820
-
-56
-565720
-
-42
-424320
-
-50
-505120
-
-48
-484920
-@
-13:
-131415 *
-1 (26:3B
-	
-9
-16
-
-
-11
-17
-
-54
-545520
-
-26
-262720
-
-39
-394020
-@
-23:
-232415 *
-1 (26:3B
-	
-9
-16
-
-
-11
-25rÜ
-
-
-131821*
-1 (
-
-131822*
-1 (
-
-131822*
-1 ("
-
-232621*
-1 (
-
-232622*
-1 (
-
-232622*
-1 (*
-
-281831*
-1 (+
-
-282631*
-12 (C
-
-28632*
-1 (
-
-281821*
-1, (0
-
-281822*
-1 (+
-
-282621*
-1D (O
-
-282622*
-12 (C
-
-28622*
-1	 (
-
-28633*
-1	 (
-
-281822*
-1 (
-
-281333*
-1 (
-
-28622*
-1	 (
-
-28633*
-1	 (
-
-282622*
-1 (
-
-282333*
-1 (
-
-343731*
-10 (6
-
-343721*
-17 (=
-
-343722*
-10 (6
-
-343921*
-1 (
-
-343922*
-1	 (
-
-343941*
-1 (&
-
-342633*
-1 (&
-
-344232*
-1' (5
-
-342333*
-1 (&
-
-342622*
-1 (&
-
-342333*
-1 (&
-
-343933*
-1 ( 
-
-344432*
-1! (6
-
-343733*
-1 (#
-
-344632*
-1$ (,
-
-343933*
-1	 (
-
-344832*
-1 (
-
-343933*
-1	 (
-
-345032*
-1 (
-
-343933*
-1 ("
-
-345232*
-1# (7
-
-343733*
-18 (>
-
-345432*
-1? (G
-
-343933*
-1! !(
-
-344832*
-1! !( 
-
-341833*
-1$	 $(
-
-345632*
-1$ $(
-
-341333*
-1$	 $(
-
-341822*
-1$	 $(
-
-341333*
-1$	 $(

@@ -1,185 +1,0 @@
-
-1.0lmellan_Tarea_2-INF331JavaFrontend"1751781469593*java2.Bû
-N
-Isrc/main/java/com/tiendafiel/fidelidad/repositories/CompraRepository.java2
-
-package4
-*
-%com.tiendafiel.fidelidad.repositories5
-;
-6com.tiendafiel.fidelidad.repositories.CompraRepository7
-
-
-class8
-
-access9
-
-public10
-
-simple name11
-
-CompraRepository12
-D
->com.tiendafiel.fidelidad.repositories.CompraRepository.compras14
-
-field15
-
-private16
-
-compras17
-,
-&com.tiendafiel.fidelidad.models.Compra19
-
-unknown20
-
-
-uses21
-w
-qcom.tiendafiel.fidelidad.repositories.CompraRepository#registrarCompra(Lcom/tiendafiel/fidelidad/models/Compra;)V23
-
-method24
-
-registrarCompra25
-
-	has param26
-
-is type27
-
-returns28
-
-
-references29
-5
-/com.tiendafiel.fidelidad.models.Compra#getId()I31
-
-calls32
-u
-ocom.tiendafiel.fidelidad.repositories.CompraRepository#obtenerCompra(I)Lcom/tiendafiel/fidelidad/models/Compra;34
-
-obtenerCompra35
-b
-\com.tiendafiel.fidelidad.repositories.CompraRepository#listarCompras()Ljava/util/Collection;37
-
-listarCompras38J
-
-1
-12Z
-
-3	
-354jë
-@
-22:
-222324 *
-1 (26:3B
-	
-9
-10
-
-
-11
-25
-9
-64
-678 *
-1	 	(:3B
-	
-9
-10
-
-
-11
-12
-
-30
-303120
-@
-13:
-131415 *
-1
- 
-(26:3B
-	
-9
-16
-
-
-11
-17
-@
-36:
-363724 *
-1 (26:3B
-	
-9
-10
-
-
-11
-38
-
-18
-181920
-@
-33:
-333424 *
-1 (26:3B
-	
-9
-10
-
-
-11
-35rË
-
-131821*
-1
- 
-( 
-
-221826*
-1! ('
-
-221827*
-1( (.
-
-221821*
-1! ('
-
-221828*
-1	 (
-
-221329*
-1	 (
-
-221329*
-1	 (
-
-221829*
-1 (
-
-223032*
-1 (!
-
-331828*
-1 (
-
-331821*
-1 (
-
-331828*
-1 (
-
-331329*
-1 (
-
-331329*
-1 (
-
-361821*
-1 (
-
-361329*
-1 (
-
-361329*
-1 (

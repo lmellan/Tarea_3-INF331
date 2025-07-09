@@ -73,4 +73,14 @@ public class Cliente {
         validarCorreo(correo);
         this.correo = correo;
     }
+
+    public List<Compra> getHistorialCompras() {
+        return compras;
+    }
+
+    public void eliminarCompra(Compra compra) {
+    compras.remove(compra);
+}
+
+
 }

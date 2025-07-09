@@ -20,5 +20,10 @@ import com.tiendafiel.fidelidad.models.Compra;
     public Collection&lt;Compra&gt; listarCompras() {
 <span class="fc" id="L21">        return compras.values();</span>
     }
+    
+    public void eliminarCompra(int idCompra) {
+<span class="fc" id="L25">        compras.remove(idCompra);</span>
+<span class="fc" id="L26">    }</span>
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

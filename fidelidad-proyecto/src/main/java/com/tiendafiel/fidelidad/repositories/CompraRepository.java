@@ -20,4 +20,9 @@ public class CompraRepository {
     public Collection<Compra> listarCompras() {
         return compras.values();
     }
+    
+    public void eliminarCompra(int idCompra) {
+        compras.remove(idCompra);
+    }
+
 }

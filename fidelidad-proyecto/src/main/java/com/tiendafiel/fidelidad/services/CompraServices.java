@@ -36,6 +36,17 @@ public class CompraServices {
         repo.registrarCompra(compra);
     }
 
+    public void eliminarCompra(int idCompra) {
+        Compra compra = repo.obtenerCompra(idCompra);
+        if (compra == null) return;
+
+        Cliente cliente = clienteRepo.obtenerCliente(compra.getIdCliente());
+        if (cliente != null) {
+            cliente.eliminarCompra(compra);
+        }
+
+        repo.eliminarCompra(idCompra);
+    }
 
 
 }
